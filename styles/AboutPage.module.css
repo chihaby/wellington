@@ -1,0 +1,58 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+}
+
+.title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: var(--primary_color);
+  text-transform: uppercase;
+}
+
+.photo {
+  margin: auto;
+  width: 18rem;
+  display: block;
+}
+
+/* Small tablets */
+@media (min-width: 550px) {
+  .photo {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+
+/* ✅ Tablets */
+@media (min-width: 768px) {
+  .container {
+    padding: 2em;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .photo {
+    width: 20rem;
+  }
+}
+
+/* Laptops */
+@media (min-width: 1025px) {
+  .photo {
+    margin-top: 200px;
+    width: 22rem;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}

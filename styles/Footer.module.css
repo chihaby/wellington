@@ -1,0 +1,156 @@
+/* Base Styles (Mobile First) */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  padding: 1em;
+  text-align: center;
+}
+
+.paragraph {
+  line-height: 1.6;
+  text-align: left;
+}
+
+.label {
+  text-align: left;
+}
+
+.form_input,
+.form_message {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e0e8e7;
+  color: black;
+  font-size: 1em;
+}
+
+.form_input::placeholder,
+.form_message::placeholder {
+  color: black;
+}
+
+.form_message {
+  height: 100px;
+}
+
+.form_submit {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0 80px;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form_submit:hover {
+  background-color: #e0e8e7;
+  color: black;
+  font-weight: 600;
+}
+
+.message_sent {
+  width: 100%;
+  background-color: #e0e8e7;
+  color: var(--primary_color);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sitemap {
+  display: flex; /* put <li> side by side */
+  flex-wrap: wrap; /* allow wrapping to next line if needed */
+  gap: 20px; /* space between items */
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+.sitemap li {
+  margin: 0;
+}
+.link {
+  color: white; /* make text white */
+  text-decoration: none; /* remove underline */
+}
+
+.link:hover {
+  color: #5baab2; /* hover effect */
+}
+
+.contact_phone,
+.contact_email {
+  margin-top: 40px;
+}
+
+.spinner {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.spinnerRing {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tablet & Up (≥768px) */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2em;
+    max-width: 1100px;
+    margin: auto;
+    gap: 2%;
+    height: auto;
+  }
+
+  .title_section {
+    margin-bottom: 2em;
+  }
+
+  .footer_form {
+    flex: 1 1 58%;
+  }
+
+  .footer_contact {
+    flex: 1 1 35%;
+  }
+
+  .contact_phone {
+    margin-top: 50px;
+  }
+
+  .copyright {
+    margin-top: 180px;
+  }
+}
+
+/* Desktop (≥1025px) */
+@media (min-width: 1025px) {
+  .copyright {
+    margin-top: 235px;
+  }
+}
