@@ -22,13 +22,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/">Home</Link>
-            </li>
-            <li className={styles.ul_links}>
               <Link href="/about">About</Link>
             </li>
             <li className={styles.ul_links}>
               <Link href="/services">Services</Link>
+            </li>
+            <li className={styles.ul_links}>
+              <Link href="/">Team</Link>
             </li>
             <li className={styles.ul_links}>
               <Link href="/contact">Contact</Link>

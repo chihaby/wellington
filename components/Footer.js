@@ -264,6 +264,10 @@ const Footer = () => {
           <hr />
           <div className={styles.copyright}>
             <p> Copyright &copy; 2025 Bay Area Web Design</p>
+            <p>
+              Site built by{" "}
+              <a href="https://bayareawebdesign.net">Bay Area Web Design.Net</a>
+            </p>
           </div>
         </Row>
       </footer>
