@@ -5,11 +5,11 @@ import Row from "react-bootstrap/Row";
 import Link from "next/link";
 // import WhiteCtaLink from "./WhiteCtaLink";
 
-const Service = () => {
+const Clients = () => {
   return (
     <div style={{ backgroundColor: "#fafafa" }}>
       <div className={styles.container}>
-        <h2 className={styles.models_main_title}>Examples</h2>
+        <h2 className={styles.models_main_title}>Clients</h2>
         <Row className={styles.models}>
           <Col sm={12} md={4} className={styles.model_item}>
             <a
@@ -55,4 +55,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Clients;

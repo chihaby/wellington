@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Meta from "./Meta";
 import Hero from "./Hero";
 import Benefit from "./Benefit";
-import Service from "./Services";
+import Clients from "./Clients";
 import About from "./About";
 import CTA from "./CTA";
 import Footer from "./Footer";
@@ -18,9 +18,9 @@ const Layout = () => {
       <Meta />
       <Navbar />
       <Hero />
-      <Benefit />
       <About />
-      <Service />
+      <Benefit />
+      <Clients />
       <CTA />
       <Footer />
     </ThemeProvider>

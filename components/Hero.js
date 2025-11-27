@@ -10,13 +10,10 @@ const Hero = () => {
       <div className={styles.hero_section}>
         <div className={styles.left_side}>
           <h1 className={styles.strapline}>
-            Web Design and Development for Businesses, and professionals.
+            Your Bay Area property management. Providing residential,
+            commercial, and parking services. Proudly serving our community for
+            15 years!
           </h1>
-          <p className={styles.paragraph}>
-            Empower your online presence with a website that is built for
-            success - inclusive design, great user experience, accessibility,
-            and performance, all in one.
-          </p>
           <br />
           <CtaLink />
         </div>

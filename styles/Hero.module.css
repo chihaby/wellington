@@ -4,14 +4,12 @@
   position: relative;
   /* border: 2px solid red; */
 }
-
 .hero_section {
   display: flex;
   flex-direction: column;
   padding: 2em;
   overflow: hidden;
 }
-
 .left_side {
   text-align: center;
   line-height: 1.6em;
@@ -19,24 +17,16 @@
   word-wrap: break-word;
   font-family: "PT Sans", sans-serif;
 }
-
 .strapline {
   font-size: 21px;
   font-weight: bold;
   color: white;
   margin: 25px 0;
 }
-
-.paragraph {
-  font-size: 16px;
-  color: white;
-}
-
 .cta_button {
   margin: auto;
   text-align: center;
 }
-
 .image_hero {
   display: none;
 }
@@ -49,13 +39,11 @@
     padding: 2em;
     height: auto;
   }
-
   .left_side {
     text-align: left;
     flex: 1 1 50%;
     padding-right: 1em;
   }
-
   .image_hero {
     display: block;
     flex: 1 1 45%;
@@ -65,14 +53,9 @@
     background-position: center;
     min-height: 12rem;
   }
-
   .strapline {
     font-size: 24px;
     text-align: left;
-  }
-
-  .paragraph {
-    line-height: 1.6;
   }
 }
 
@@ -81,14 +64,9 @@
   .hero_section {
     padding: 2em;
   }
-
   .strapline {
     font-size: 28px;
     font-weight: 600;
-  }
-
-  .paragraph {
-    font-size: 17px;
   }
 }
 
@@ -100,23 +78,16 @@
     margin: auto;
     gap: 2%;
   }
-
   .left_side {
     flex-basis: 60%;
+    padding-top: 4rem;
   }
-
   .strapline {
-    font-size: 36px;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.6;
+    /* margin-bottom: 30px; */
     width: 600px;
   }
-
-  .paragraph {
-    font-size: 18px;
-    width: 600px;
-  }
-
   .image_hero {
     position: absolute;
     flex-basis: 35%;
@@ -127,15 +98,9 @@
 /* Large Desktops (≥1281px) */
 @media (min-width: 1281px) {
   .hero_section {
-    /* height: auto; */
-    padding-top: 8rem;
+    padding-top: 2rem;
     padding-bottom: 8rem;
   }
-
-  .left_side {
-    margin-top: 10px;
-  }
-
   .image_hero {
     flex-basis: 15%;
     left: 1040px;
