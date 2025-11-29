@@ -63,6 +63,10 @@
     font-size: 28px;
     margin-top: 3em;
   }
+  .ul {
+    list-style-type: disc;
+    margin-left: 150px;
+  }
 }
 
 /* 1281px - Large desktops */

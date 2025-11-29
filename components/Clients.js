@@ -1,21 +1,21 @@
-import Image from "next/image";
-import styles from "../styles/Service.module.css";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Link from "next/link";
+// import Image from 'next/image';
+import styles from '../styles/Service.module.css';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Link from 'next/link';
 // import WhiteCtaLink from "./WhiteCtaLink";
 
 const Clients = () => {
   return (
-    <div style={{ backgroundColor: "#fafafa" }}>
+    <div style={{ backgroundColor: '#fafafa' }}>
       <div className={styles.container}>
-        <h2 className={styles.models_main_title}>Clients</h2>
+        <h2 className={styles.models_main_title}>Testimonials</h2>
         <Row className={styles.models}>
           <Col sm={12} md={4} className={styles.model_item}>
             <a
-              href="https://www.blitzdetail.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.blitzdetail.com/'
+              target='_blank'
+              rel='noopener noreferrer'
               className={styles.model_link}
             >
               <div className={styles.model_title}>Business</div>
@@ -29,9 +29,9 @@ const Clients = () => {
           </Col>
           <Col sm={12} md={4} className={styles.model_item}>
             <a
-              href="https://client-custom-website.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://client-custom-website.netlify.app/'
+              target='_blank'
+              rel='noopener noreferrer'
               className={styles.model_link}
             >
               <div className={styles.model_title}>Personal</div>
@@ -44,11 +44,6 @@ const Clients = () => {
               </div>
             </a>
           </Col>
-          <div className={styles.view_services}>
-            <Link href="/services" className={styles.cta_link}>
-              VIEW SERVICES
-            </Link>
-          </div>
         </Row>
       </div>
     </div>
