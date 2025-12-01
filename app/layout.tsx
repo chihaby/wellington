@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 // import Script from "next/script";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -132,7 +133,15 @@ export default function RootLayout({
       <head>
         <LocalBusinessSchema />
       </head>
-      <body>{children}</body>
+      <body>
+        <header>
+          <Link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

@@ -3,7 +3,6 @@
   max-width: 999px;
   padding: 1em;
   margin: auto;
-  font-family: "PT Sans", sans-serif;
   line-height: 1.5em;
   font-size: 1.1em;
   word-wrap: break-word;
@@ -14,7 +13,6 @@
   font-size: 25px;
   line-height: 1.5em;
   color: var(--primary_color);
-  /* font-family: "Merriweather", serif; */
   text-transform: uppercase;
 }
 .steps {

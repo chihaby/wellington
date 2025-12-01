@@ -1,16 +1,18 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bs-body-font-family: "Poppins", sans-serif;
 }
 
+/* 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -19,11 +21,11 @@
   }
 } */
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: "Poppins", sans-serif;
+} */
 
 /* * {
   outline: 1px solid red;
@@ -31,15 +33,12 @@ body {
 
 html,
 body {
-  overflow-x: hidden;
-}
-
-html,
-body {
   padding: 0;
   margin: 0;
   font-size: 16px;
   width: 100%;
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
 }
 
 a {

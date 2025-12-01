@@ -15,7 +15,6 @@
   line-height: 1.6em;
   font-size: 1.1em;
   word-wrap: break-word;
-  font-family: "PT Sans", sans-serif;
 }
 .strapline {
   font-size: 21px;
@@ -62,7 +61,7 @@
 /* Tablet Landscape & Small Laptops (≥768px) */
 @media (min-width: 768px) {
   .hero_section {
-    padding: 2em;
+    padding: 4em;
   }
   .strapline {
     font-size: 28px;
@@ -76,7 +75,7 @@
     height: auto;
     max-width: 1200px;
     margin: auto;
-    gap: 2%;
+    /* margin-bottom: 25px; */
   }
   .left_side {
     flex-basis: 60%;
@@ -85,8 +84,8 @@
   .strapline {
     font-size: 28px;
     line-height: 1.6;
-    /* margin-bottom: 30px; */
     width: 600px;
+    margin-bottom: 50px;
   }
   .image_hero {
     position: absolute;
@@ -98,12 +97,15 @@
 /* Large Desktops (≥1281px) */
 @media (min-width: 1281px) {
   .hero_section {
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding: 8em 2em 10em 0em;
+    height: auto;
   }
   .image_hero {
     flex-basis: 15%;
     left: 1040px;
     top: 145px;
+  }
+  .strapline {
+    margin-bottom: 75px;
   }
 }

@@ -14,7 +14,6 @@ const Hero = () => {
             commercial, and parking services. Proudly serving our community for
             15 years!
           </h1>
-          <br />
           <CtaLink />
         </div>
         <div className={styles.image_hero}>

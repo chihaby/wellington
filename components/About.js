@@ -1,18 +1,18 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import styles from '../styles/About.module.css';
-import Card from 'react-bootstrap/Card';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import styles from "../styles/About.module.css";
+import Card from "react-bootstrap/Card";
 
 const About = () => {
   return (
     <div className={styles.container}>
       <Row>
         <Col sm={12} md={6} lg={6}>
-          <Card style={{ width: '18rem' }}></Card>
+          <Card style={{ width: "18rem" }}></Card>
         </Col>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.title}>
-            <h3>Hi! We are Wellington</h3>
+            <h2 style={{ fontWeight: "600" }}>Hi! We are Wellington</h2>
           </div>
           <p>
             A trusted property management company with 15 years of service in
@@ -29,16 +29,9 @@ const About = () => {
       <hr />
       <Row>
         <div className={styles.title}>
-          <h3>Why Work With Us?</h3>
+          <h3 style={{ fontWeight: "500" }}>Why Work With Us?</h3>
         </div>
         <ul className={styles.ul}>
-          {/* <li>
-            <b>Experienced & Trusted:</b>
-            <p>
-              15 years of proven expertise in local property management,
-              ensuring reliability, and high-quality service.
-            </p>
-          </li> */}
           <li>
             <b>Local Knowledge, Local Advantage:</b>
             <p>

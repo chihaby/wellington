@@ -250,8 +250,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href="/blog">
-                  Blog
+                <Link className={styles.link} href="/team">
+                  Team
                 </Link>
               </li>
               <li>
@@ -263,7 +263,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className={styles.copyright}>
-            <p> Copyright &copy; 2025 Bay Area Web Design</p>
+            <p> Copyright &copy; 2025 WELLINGTON</p>
             <p>
               Site built by{" "}
               <a href="https://bayareawebdesign.net">Bay Area Web Design.Net</a>
