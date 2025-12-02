@@ -38,7 +38,6 @@
 /* ✅ 768px - Medium tablets */
 @media (min-width: 768px) {
   .container {
-    padding: 1em;
     height: auto;
   }
 
@@ -57,7 +56,7 @@
 /* 1025px - Laptops and up */
 @media (min-width: 1025px) {
   .container {
-    padding: 0;
+    width: 1100px;
   }
   .title {
     margin-top: 2em;

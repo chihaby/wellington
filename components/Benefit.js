@@ -1,8 +1,8 @@
 import styles from "../styles/Benefits.module.css";
 import Image from "next/image";
-import axe from "../public/assets/svg/axe.svg";
-import logo from "../public/assets/svg/logo.svg";
-import copy from "../public/assets/svg/copy.svg";
+import parking from "../public/assets/svg/parking.svg";
+import property from "../public/assets/svg/property.svg";
+import events from "../public/assets/svg/events.svg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
@@ -16,8 +16,8 @@ const Benefit = () => {
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
-                src={axe}
-                alt="accessibility"
+                src={parking}
+                alt="parking icon image"
                 width={130}
                 style={{
                   margin: "auto",
@@ -44,7 +44,7 @@ const Benefit = () => {
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
-                src={copy}
+                src={property}
                 alt="writing for the web"
                 width={130}
                 style={{
@@ -70,7 +70,7 @@ const Benefit = () => {
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
-                src={logo}
+                src={events}
                 alt="logo design"
                 width={130}
                 style={{

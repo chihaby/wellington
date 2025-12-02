@@ -1,14 +1,22 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import styles from "../styles/About.module.css";
-import Card from "react-bootstrap/Card";
+import estate from "../public/assets/svg/estate.svg";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div className={styles.container}>
       <Row>
         <Col sm={12} md={6} lg={6}>
-          <Card style={{ width: "18rem" }}></Card>
+          <Image
+            src={estate}
+            alt="parking icon image"
+            width={130}
+            style={{
+              margin: "auto",
+            }}
+          />
         </Col>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.title}>
@@ -28,9 +36,7 @@ const About = () => {
       </Row>
       <hr />
       <Row>
-        <div className={styles.title}>
-          <h3 style={{ fontWeight: "500" }}>Why Work With Us?</h3>
-        </div>
+        <h3 className={styles.title}>Why Work With Us?</h3>
         <ul className={styles.ul}>
           <li>
             <b>Local Knowledge, Local Advantage:</b>
