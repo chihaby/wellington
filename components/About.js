@@ -1,8 +1,8 @@
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import styles from "../styles/About.module.css";
-import estate from "../public/assets/svg/estate.svg";
-import Image from "next/image";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import styles from '../styles/About.module.css';
+import estate from '../public/assets/svg/estate.svg';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -11,21 +11,23 @@ const About = () => {
         <Col sm={12} md={6} lg={6}>
           <Image
             src={estate}
-            alt="parking icon image"
+            alt='parking icon image'
             width={130}
             style={{
-              margin: "auto",
+              margin: 'auto',
             }}
           />
         </Col>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.title}>
-            <h2 style={{ fontWeight: "600" }}>Hi! We are Wellington</h2>
+            <h2 style={{ fontWeight: '600', color: '#1f2d2a' }}>
+              Wellington/CMA
+            </h2>
           </div>
-          <p>
-            A trusted property management company with 15 years of service in
-            the local market. We focus on simplifying the rental experience for
-            owners and tenants alike, ensuring every property is
+          <p style={{ color: '#1f2d2a' }}>
+            We are a trusted property management company with 15 years of
+            service in the local market. We focus on simplifying the rental
+            experience for owners and tenants alike, ensuring every property is
             well-maintained, efficiently managed, and consistently profitable.
             From tenant screening to rent collection, our dedicated team handles
             every detail so you can enjoy peace of mind and maximize your
@@ -42,7 +44,7 @@ const About = () => {
             <b>Local Knowledge, Local Advantage:</b>
             <p>
               As a locally-owned business, we understand the unique needs and
-              regulations of your area, giving you a competitive edge.
+              regulations of our area, giving you a competitive edge.
             </p>
           </li>
           <li>

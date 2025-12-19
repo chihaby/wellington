@@ -1,6 +1,7 @@
 .main {
   display: flex;
-  background-color: #252324;
+  /* background-color: #3B3838; */
+  background-color: #2f5d50;
   justify-content: center;
 }
 .navbar {
@@ -99,12 +100,13 @@
 @media (min-width: 1025px) {
   .logo {
     position: relative;
-    top: -10px;
+    top: 0px;
+    margin-left: 50px;
   }
   .title {
     position: relative;
     top: 0px;
-    left: 75px;
+    left: 25px;
   }
   .navbar ul {
     display: flex;

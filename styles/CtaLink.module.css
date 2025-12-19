@@ -5,15 +5,13 @@
   padding: 1em;
   cursor: pointer;
   box-shadow: none;
-  /* background-color: var(--contrast_color); */
-  /* background-color: #d12e14; */
-  background-color: #5baab2;
+  background-color: #d4b483;
   color: black;
   text-decoration: none;
 }
 @media (min-width: 769px) {
   .cta_link:hover {
-    background-color: #973f26;
+    background-color: #4f7f73;
     color: white;
     font-weight: bold;
   }
