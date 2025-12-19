@@ -1,8 +1,8 @@
-import styles from "../styles/Hero.module.css";
-// import Image from "next/image";
+import styles from '../styles/Hero.module.css';
+import Image from 'next/image';
 // import heroImage from "../public/assets/svg/hero9.svg";
-// import Rad from '../public/img/Rad.jpg';
-import CtaLink from "./CtaLink";
+// import appt1 from '../public/assets/img/appt1.jpg';
+import CtaLink from './CtaLink';
 
 const Hero = () => {
   return (
@@ -18,10 +18,10 @@ const Hero = () => {
         </div>
         <div className={styles.image_hero}>
           {/* <Image
-            src={Rad}
+            src={appt1}
             alt='image of Rad an experienced web developer'
-            width={330}
-            height={300}
+            width={380}
+            height={350}
             priority
           /> */}
         </div>

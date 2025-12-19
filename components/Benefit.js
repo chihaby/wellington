@@ -1,35 +1,35 @@
-import styles from "../styles/Benefits.module.css";
-import Image from "next/image";
-import parking from "../public/assets/svg/parking.svg";
-import property from "../public/assets/svg/property.svg";
-import events from "../public/assets/svg/events.svg";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import styles from '../styles/Benefits.module.css';
+import Image from 'next/image';
+import parking from '../public/assets/svg/parking.svg';
+import property from '../public/assets/svg/property.svg';
+import events from '../public/assets/svg/events.svg';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const Benefit = () => {
   return (
-    <div style={{ backgroundColor: "#FAFAFA" }}>
+    <div style={{ backgroundColor: '#f4f7f6' }}>
       <div className={styles.container}>
         <h2 className={styles.title}>Services</h2>
         <br />
-        <Row style={{ padding: "16px" }}>
+        <Row style={{ padding: '16px' }}>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
                 src={parking}
-                alt="parking icon image"
+                alt='parking icon image'
                 width={130}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
             <div
               className={styles.item_title}
               style={{
-                fontSize: "18px",
-                fontWeight: "600",
-                textAlign: "center",
+                fontSize: '18px',
+                fontWeight: '600',
+                textAlign: 'center',
               }}
             >
               Parking Management
@@ -45,45 +45,45 @@ const Benefit = () => {
             <div className={styles.icon}>
               <Image
                 src={property}
-                alt="writing for the web"
+                alt='writing for the web'
                 width={130}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
             <div
               className={styles.item_title}
               style={{
-                fontSize: "18px",
-                fontWeight: "600",
-                textAlign: "center",
+                fontSize: '18px',
+                fontWeight: '600',
+                textAlign: 'center',
               }}
             >
               Property Management
             </div>
             <br />
             <div className={styles.description}>
-              <b>Commercial {"&"} Residential</b>
+              <b>Commercial {'&'} Residential</b>
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
                 src={events}
-                alt="logo design"
+                alt='logo design'
                 width={130}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
             <div
               className={styles.item_title}
               style={{
-                fontSize: "18px",
-                fontWeight: "600",
-                textAlign: "center",
+                fontSize: '18px',
+                fontWeight: '600',
+                textAlign: 'center',
               }}
             >
               Special Events
