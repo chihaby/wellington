@@ -81,7 +81,7 @@
 }
 
 .btnPrimary:hover {
-  background-color: #973f26;
+  background-color: var(--color-accent);
   box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
 }
 

@@ -1,6 +1,6 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import styles from '../styles/About.module.css';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import styles from "../styles/About.module.css";
 // import estate from '../public/assets/svg/estate.svg';
 // import Image from 'next/image';
 
@@ -20,11 +20,11 @@ const About = () => {
         </Col>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.title}>
-            <h2 style={{ fontWeight: '600', color: '#1f2d2a' }}>
+            <h2 style={{ fontWeight: "600", color: "#1f2d2a" }}>
               Wellington/CMA
             </h2>
           </div>
-          <p style={{ color: '#1f2d2a' }}>
+          <p className={styles.description}>
             We are a trusted property management company with 15 years of
             service in the Bay Area. We focus on simplifying the rental
             experience for owners and tenants alike, ensuring every property is
@@ -39,7 +39,7 @@ const About = () => {
       <hr />
       <Row>
         <h3 className={styles.title}>Why Work With Us?</h3>
-        <ul className={styles.ul}>
+        <ul className={styles.list}>
           <li>
             <b>Local Knowledge, Local Advantage:</b>
             <p>

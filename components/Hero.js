@@ -1,8 +1,8 @@
-import styles from '../styles/Hero.module.css';
-import Image from 'next/image';
+import styles from "../styles/Hero.module.css";
+import Image from "next/image";
 // import heroImage from "../public/assets/svg/hero9.svg";
 // import appt1 from '../public/assets/img/appt1.jpg';
-import CtaLink from './CtaLink';
+import Cta from "./Cta";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
             commercial, and parking services. Proudly serving our community for
             15 years!
           </h1>
-          <CtaLink />
+          <Cta />
         </div>
         <div className={styles.image_hero}>
           {/* <Image

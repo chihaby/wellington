@@ -126,7 +126,7 @@ const Footer = () => {
   );
 
   return (
-    <div style={{ backgroundColor: "#252324" }}>
+    <div style={{ backgroundColor: "var(--color-primary" }}>
       <footer className={styles.footer}>
         <div className={styles.footer_form}>
           <br />
@@ -215,7 +215,7 @@ const Footer = () => {
         <hr />
         <Row className={styles.footer_contact}>
           <hr />
-          <p className={styles.contact_phone}>📞 Phone: (510) 630-9741</p>
+          <p className={styles.contact_phone}>Phone: (510) 630-9741</p>
           <p className={styles.contact_email}>
             <a
               href={`mailto:rad@bayareawebdesign.net`}
@@ -226,7 +226,7 @@ const Footer = () => {
                 borderRadius: "5px",
               }}
             >
-              📧 Email: rad@bayareawebdesign.net
+              Email: rad@bayareawebdesign.net
             </a>
           </p>
           <hr />
@@ -265,7 +265,7 @@ const Footer = () => {
           <div className={styles.copyright}>
             <p> Copyright &copy; 2025 WELLINGTON</p>
             <p>
-              Site built by{" "}
+              Built by{" "}
               <a href="https://bayareawebdesign.net">Bay Area Web Design.Net</a>
             </p>
           </div>

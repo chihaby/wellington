@@ -1,6 +1,7 @@
 /* Base Styles (Mobile First) */
 .main {
-  background-color: #2f5d50;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
   position: relative;
   /* border: 2px solid red; */
 }
@@ -79,12 +80,13 @@
   }
   .left_side {
     flex-basis: 60%;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .strapline {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 1.6;
-    width: 600px;
+    width: 550px;
     margin-bottom: 50px;
   }
   .image_hero {
@@ -99,6 +101,9 @@
   .hero_section {
     padding: 8em 2em 10em 0em;
     height: auto;
+  }
+  .left_side {
+    padding-bottom: 0rem;
   }
   .image_hero {
     flex-basis: 15%;

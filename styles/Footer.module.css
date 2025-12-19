@@ -3,70 +3,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--color-primary-contrast);
   padding: 1em;
   text-align: center;
 }
-
 .paragraph {
   line-height: 1.6;
   text-align: left;
 }
-
 .label {
   text-align: left;
 }
-
 .form_input,
 .form_message {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #e0e8e7;
-  color: black;
+  background-color: var(--color-background);
+  color: var(--color-primary);
   font-size: 1em;
 }
-
 .form_input::placeholder,
 .form_message::placeholder {
-  color: black;
+  color: var(--color-text-muted);
 }
-
 .form_message {
   height: 100px;
 }
-
 .form_submit {
   width: 100%;
   background-color: transparent;
-  color: white;
+  color: var(--color-primary-contrast);
   padding: 14px 20px;
   margin: 25px 0 80px;
-  border: 1px solid white;
+  border: 2px solid var(--color-border);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .form_submit:hover {
-  background-color: #e0e8e7;
-  color: black;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-contrast);
   font-weight: 600;
 }
-
 .message_sent {
   width: 100%;
-  background-color: #e0e8e7;
+  background-color: var(--color-secondary);
   color: var(--primary_color);
   padding: 12px 20px;
   margin: 8px 0;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .sitemap {
   display: flex; /* put <li> side by side */
   flex-wrap: wrap; /* allow wrapping to next line if needed */
@@ -79,31 +70,31 @@
   margin: 0;
 }
 .link {
-  color: white; /* make text white */
+  color: var(--color-primary-contrast); /* make text white */
   text-decoration: none; /* remove underline */
 }
-
 .link:hover {
-  color: #5baab2; /* hover effect */
+  background-color: var(--color-secondary); /* hover effect */
+  color: var(--color-primary-contrast);
 }
-
 .contact_phone,
 .contact_email {
   margin-top: 40px;
 }
-
+.copyright {
+  color: var(--color-primary-contrast);
+}
 .spinner {
   display: inline-block;
   margin-left: 10px;
 }
-
 .spinnerRing {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--color-border);
   border-radius: 50%;
-  border-top-color: #fff;
+  border-top-color: var(--color-primary-contrast);
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -120,28 +111,24 @@
     justify-content: space-between;
     text-align: left;
     padding: 2em;
+    padding-bottom: 0;
     max-width: 1100px;
     margin: auto;
     gap: 2%;
     height: auto;
   }
-
   .title_section {
     margin-bottom: 2em;
   }
-
   .footer_form {
     flex: 1 1 58%;
   }
-
   .footer_contact {
     flex: 1 1 35%;
   }
-
   .contact_phone {
     margin-top: 50px;
   }
-
   .copyright {
     margin-top: 180px;
   }
@@ -149,6 +136,9 @@
 
 /* Desktop (≥1025px) */
 @media (min-width: 1025px) {
+  .footer {
+    height: auto;
+  }
   .copyright {
     margin-top: 235px;
   }

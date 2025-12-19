@@ -64,7 +64,6 @@
   padding: 1em;
   cursor: pointer;
   box-shadow: none;
-  background-color: black;
   color: white;
   text-decoration: none;
   justify-content: center;
@@ -166,7 +165,7 @@
 
   .cta_link:hover {
     font-weight: bold;
-    background-color: #973f26;
+    background-color: var(--color-secondary);
     text-align: center;
   }
 }
