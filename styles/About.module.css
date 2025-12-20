@@ -38,6 +38,12 @@
     max-width: 999px;
     height: auto;
   }
+  .about_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+  }
 }
 
 /* ✅ 768px - Medium tablets */
@@ -45,7 +51,6 @@
   .container {
     height: auto;
   }
-
   .title {
     margin-top: 2.5em;
     font-size: 30px;

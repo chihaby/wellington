@@ -1,33 +1,32 @@
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import styles from "../styles/About.module.css";
-// import estate from '../public/assets/svg/estate.svg';
-// import Image from 'next/image';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import styles from '../styles/About.module.css';
+import home_secondary from '../public/assets/svg/home_secondary.svg';
+import Image from 'next/image';
 
 const About = () => {
   return (
     <div className={styles.container}>
       <Row>
         <Col sm={12} md={6} lg={6}>
-          {/* <Image
-            src={estate}
-            alt='parking icon image'
-            width={130}
-            style={{
-              margin: 'auto',
-            }}
-          /> */}
+          <div className={styles.about_icon}>
+            <Image
+              src={home_secondary}
+              alt='real estate icon image'
+              width={150}
+            />
+          </div>
         </Col>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.title}>
-            <h2 style={{ fontWeight: "600", color: "#1f2d2a" }}>
+            <h2 style={{ fontWeight: '600', color: '#1f2d2a' }}>
               Wellington/CMA
             </h2>
           </div>
           <p className={styles.description}>
-            We are a trusted property management company with 15 years of
-            service in the Bay Area. We focus on simplifying the rental
-            experience for owners and tenants alike, ensuring every property is
+            A trusted property management company with 15 years of service in
+            the Bay Area. We focus on simplifying the rental experience for
+            owners and tenants alike, ensuring every property is
             well-maintained, efficiently managed, and consistently profitable.
             From tenant screening to rent collection, our dedicated team handles
             every detail so you can enjoy peace of mind and maximize your

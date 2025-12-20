@@ -15,6 +15,7 @@
   font-size: 25px;
   line-height: 1.5em;
   text-transform: uppercase;
+  color: var(--color-text-primary);
 }
 .icon {
   display: block;
@@ -23,9 +24,13 @@
   border-radius: 4%;
   margin-bottom: 16px;
 }
+.item_title {
+  color: var(--color-text-primary);
+}
 .description {
   font-size: 16px;
   margin-bottom: 4em;
+  color: var(--color-text-muted);
 }
 @media (min-width: 550px) {
   .container {

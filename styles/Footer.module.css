@@ -36,17 +36,18 @@
 .form_submit {
   width: 100%;
   background-color: transparent;
-  color: var(--color-primary-contrast);
+  color: var(--color-accent);
   padding: 14px 20px;
   margin: 25px 0 80px;
   border: 2px solid var(--color-border);
   border-radius: 8px;
+  font-weight: 900;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .form_submit:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary-contrast);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 600;
 }
 .message_sent {
@@ -84,6 +85,15 @@
 .copyright {
   color: var(--color-primary-contrast);
 }
+.a_tag {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.a_tag:hover{
+  color: var(--color-primary-contrast);
+  text-decoration: underline;
+}
 .spinner {
   display: inline-block;
   margin-left: 10px;
@@ -97,6 +107,7 @@
   border-top-color: var(--color-primary-contrast);
   animation: spin 1s ease-in-out infinite;
 }
+
 
 @keyframes spin {
   to {
@@ -129,17 +140,11 @@
   .contact_phone {
     margin-top: 50px;
   }
-  .copyright {
-    margin-top: 180px;
-  }
 }
 
 /* Desktop (≥1025px) */
 @media (min-width: 1025px) {
   .footer {
     height: auto;
-  }
-  .copyright {
-    margin-top: 235px;
   }
 }

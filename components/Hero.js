@@ -1,8 +1,8 @@
-import styles from "../styles/Hero.module.css";
-import Image from "next/image";
+import styles from '../styles/Hero.module.css';
+import Image from 'next/image';
 // import heroImage from "../public/assets/svg/hero9.svg";
 // import appt1 from '../public/assets/img/appt1.jpg';
-import Cta from "./Cta";
+import Cta from './CTA';
 
 const Hero = () => {
   return (

@@ -1,14 +1,14 @@
-import styles from '../styles/Benefits.module.css';
+import styles from '../styles/Services.module.css';
 import Image from 'next/image';
-import parking from '../public/assets/svg/parking.svg';
-import property from '../public/assets/svg/property.svg';
+import parking from '../public/assets/svg/parking_primary.svg';
+import Commercial from '../public/assets/svg/commercial_primary.svg';
 import events from '../public/assets/svg/events.svg';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 const Benefit = () => {
   return (
-    <div style={{ backgroundColor: '#f4f7f6' }}>
+    <div style={{ backgroundColor: 'var(--color-background)' }}>
       <div className={styles.container}>
         <h2 className={styles.title}>Services</h2>
         <br />
@@ -18,22 +18,13 @@ const Benefit = () => {
               <Image
                 src={parking}
                 alt='parking icon image'
-                width={130}
+                width={80}
                 style={{
                   margin: 'auto',
                 }}
               />
             </div>
-            <div
-              className={styles.item_title}
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                textAlign: 'center',
-              }}
-            >
-              Parking Management
-            </div>
+            <span className={styles.item_title}>Parking</span>
             <br />
             <div className={styles.description}>
               A fully accessible website that meets the latest legal
@@ -44,27 +35,18 @@ const Benefit = () => {
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
-                src={property}
-                alt='writing for the web'
-                width={130}
+                src={Commercial}
+                alt='commercial building icon'
+                width={80}
                 style={{
                   margin: 'auto',
                 }}
               />
             </div>
-            <div
-              className={styles.item_title}
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                textAlign: 'center',
-              }}
-            >
-              Property Management
-            </div>
+            <span className={styles.item_title}>Commercial/Residential</span>
             <br />
             <div className={styles.description}>
-              <b>Commercial {'&'} Residential</b>
+              Commercial {'&'} Residential
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
@@ -72,22 +54,13 @@ const Benefit = () => {
               <Image
                 src={events}
                 alt='logo design'
-                width={130}
+                width={80}
                 style={{
                   margin: 'auto',
                 }}
               />
             </div>
-            <div
-              className={styles.item_title}
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                textAlign: 'center',
-              }}
-            >
-              Special Events
-            </div>
+            <span className={styles.item_title}>Events</span>
             <br />
             <div className={styles.description}>
               A logo that tells your brand story and resonates with your

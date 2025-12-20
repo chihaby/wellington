@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
 }
+
+/* Disaturated Green */
 :root {
   --bs-body-font-family: "Poppins", sans-serif;
 
@@ -20,6 +22,41 @@
 
   --color-border: #d8e0de;
 }
+/* ------------------------------------------------------------- */
+/* Warm Gray */
+/* :root {
+  --color-primary: #2b2e34;
+  --color-primary-contrast: #ffffff;
+
+  --color-accent: #4a6fa5;
+
+  --color-background: #f5f7fa;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #2b2e34;
+  --color-text-muted: #6b7280;
+
+  --color-border: #e1e4ea;
+} */
+/* --------------------------------------------------------- */
+/* Christin Grey */
+/* :root {
+  --color-primary: #3b3838;
+  --color-primary-contrast: #ffffff;
+
+  --color-secondary: #6b6a6a;
+  --color-accent: #4a6fa5;
+
+  --color-background: #f6f5f4;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #3b3838;
+  --color-text-muted: #7a7878;
+
+  --color-border: #e2e1e0;
+} */
+/* --------------------------------------------------------- */
+
 html,
 body {
   padding: 0;
