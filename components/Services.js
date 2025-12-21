@@ -18,7 +18,7 @@ const Benefit = () => {
               <Image
                 src={parking}
                 alt='parking icon image'
-                width={80}
+                width={60}
                 style={{
                   margin: 'auto',
                 }}
@@ -37,7 +37,7 @@ const Benefit = () => {
               <Image
                 src={Commercial}
                 alt='commercial building icon'
-                width={80}
+                width={60}
                 style={{
                   margin: 'auto',
                 }}
@@ -54,7 +54,7 @@ const Benefit = () => {
               <Image
                 src={events}
                 alt='logo design'
-                width={80}
+                width={60}
                 style={{
                   margin: 'auto',
                 }}

@@ -127,6 +127,8 @@
     margin: auto;
     gap: 2%;
     height: auto;
+    text-align: center;
+    align-items: center;
   }
   .title_section {
     margin-bottom: 2em;
@@ -136,9 +138,6 @@
   }
   .footer_contact {
     flex: 1 1 35%;
-  }
-  .contact_phone {
-    margin-top: 50px;
   }
 }
 

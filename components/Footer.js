@@ -132,17 +132,8 @@ const Footer = () => {
           <br />
           <h1>CONTACT US</h1>
           <br />
-          <div className={styles.title_section}>
-            <p className={styles.paragraph}>
-              We{"'"}d love to hear from you! Kindly fill out the form below,
-              and we{"'"}ll get back to you as soon as we can. Looking forward
-              to connecting with you!
-            </p>
-          </div>
-
           <form onSubmit={handleSubmit}>
-            <div className={styles.label}>Name</div>
-            <br />
+            <div className={styles.label}>Full Name</div>
             <input
               className={styles.form_input}
               type='text'
@@ -159,7 +150,6 @@ const Footer = () => {
             <br />
 
             <div className={styles.label}>Email</div>
-            <br />
             <input
               className={styles.form_input}
               type='email'
@@ -174,9 +164,7 @@ const Footer = () => {
             )}
             <br />
             <br />
-
             <div className={styles.label}>Message</div>
-            <br />
             <textarea
               className={styles.form_message}
               id='message'
@@ -209,61 +197,8 @@ const Footer = () => {
             </button>
             {isSubmitting && <LoadingSpinner />}
           </form>
-        </div>
-
-        {/* Contact Info */}
-        <hr />
-        <Row className={styles.footer_contact}>
-          <hr />
-          <p className={styles.contact_phone}>Phone: (510) 630-9741</p>
-          <p className={styles.contact_email}>
-            <a
-              href={`mailto:rad@bayareawebdesign.net`}
-              style={{
-                padding: '10px 20px',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '5px',
-              }}
-            >
-              Email: rad@bayareawebdesign.net
-            </a>
-          </p>
-          <hr />
-          <div style={{ color: 'white' }}>
-            <b>Sitemap</b>
-            <br />
-            <ul className={styles.sitemap}>
-              {/* <li>
-                <Link className={styles.link} href="/">
-                  Home
-                </Link>
-              </li> */}
-              <li>
-                <Link className={styles.link} href='/about'>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href='/services'>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href='/team'>
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href='/contact'>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <hr />
           <div className={styles.copyright}>
-            <p> Copyright &copy; 2025 WELLINGTON</p>
+            <p> Copyright &copy; 2025 WELLINGTON/CMA</p>
             <p>
               Designed by{' '}
               <a
@@ -276,7 +211,28 @@ const Footer = () => {
               </a>
             </p>
           </div>
-        </Row>
+        </div>
+
+        {/* Contact Info */}
+        <hr />
+        <div className={styles.footer_contact}>
+          <span className={styles.contact_phone}>Phone: (510) 555-5555</span>
+          <br />
+          <span className={styles.contact_email}>
+            <a
+              href={`mailto:info@wellington.com`}
+              style={{
+                padding: '10px 20px',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '5px',
+              }}
+            >
+              Email: info@wellington.com
+            </a>
+          </span>
+          <hr />
+        </div>
       </footer>
     </div>
   );
