@@ -36,7 +36,7 @@ const About = () => {
       </Row>
       <hr />
       <Row>
-        <h4>Why Work With Us?</h4>
+        <h4>Why Wellington?</h4>
         <br />
         <br />
         <br />

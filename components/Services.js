@@ -5,7 +5,7 @@ import Commercial from "../public/assets/svg/commercial_primary.svg";
 import events from "../public/assets/svg/events.svg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Cta from "./CTA";
+import Cta from "./CTA2";
 
 const Benefit = () => {
   return (

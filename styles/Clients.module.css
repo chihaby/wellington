@@ -1,5 +1,8 @@
 /* Base styles (Mobile first) */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 999px;
   margin: auto;
   padding: 1em;
@@ -8,23 +11,21 @@
   text-transform: none;
 }
 .models {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2em;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
 }
 .title {
   font-size: 1.75rem;
   font-weight: 500;
   color: var(--color-text-primary);
   text-align: center;
-  align-items: center;
+  align-items: left;
 }
 .model_item {
-  width: 100%;
-  padding: 1.2rem;
-  box-sizing: border-box;
+  width: 90%;
+  max-width: 380px;
+  margin: 0 auto;
 }
 .model_link {
   display: block;
@@ -43,12 +44,10 @@
   margin: 10px 0;
   color: var(--color-text-muted);
 }
-.model_description {
-  line-height: 1.5;
-}
-.view_sevices {
+
+/* .view_sevices {
   display: flex;
-}
+} */
 .cta_link {
   width: 250px;
   text-align: center;

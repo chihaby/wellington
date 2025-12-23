@@ -5,7 +5,7 @@ const Cta = () => {
   return (
     <>
       <Link href="/services" className={styles.cta_link}>
-        VIEW SERVICES
+        CONTACT US
       </Link>
     </>
   );
