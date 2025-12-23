@@ -18,6 +18,8 @@
   font-size: 1.75rem;
   font-weight: 500;
   color: var(--color-text-primary);
+  text-align: center;
+  align-items: center;
 }
 .model_item {
   width: 100%;
@@ -78,7 +80,8 @@
   .model_text,
   .model_description,
   .model_visit {
-    text-align: left;
+    text-align: center;
+    align-items: center;
   }
   .view_services {
     display: flex;
@@ -99,11 +102,9 @@
   .models {
     justify-content: center;
   }
-  .model_item {
-    width: 45%;
-  }
   .model_title {
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
@@ -113,15 +114,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: auto;
+    height: auto;
   }
   .models {
     max-width: 999px;
     margin: auto;
     gap: 2em;
-  }
-  .model_item {
-    width: 30%;
   }
   .title {
     text-align: left;
@@ -145,14 +143,10 @@
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
-    min-height: 65vh;
-  }
-  .model_item {
-    width: 35%;
+    height: auto;
   }
   .cta_link {
     font-size: large;
-    /* margin-bottom: 100px; */
     font-weight: 650;
     padding: 1em;
     border-radius: 4px;

@@ -1,2 +1,125 @@
 font-style: poppin
 Testimonials needs to be margined
+
+Old footer
+
+/* Base Styles (Mobile First) */
+.footer {
+  display: block;
+  color: var(--color-primary-contrast);
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+}
+.paragraph {
+  line-height: 1.6;
+  text-align: left;
+}
+.label {
+  text-align: left;
+}
+.form_input,
+.form_message {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: 1em;
+}
+.form_input::placeholder,
+.form_message::placeholder {
+  color: var(--color-text-muted);
+}
+.form_message {
+  height: 100px;
+}
+.form_submit {
+  width: 100%;
+  background-color: transparent;
+  color: var(--color-accent);
+  padding: 14px 20px;
+  margin: 25px 0 80px;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form_submit:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.message_sent {
+  width: 100%;
+  background-color: var(--color-secondary);
+  color: var(--primary_color);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.link {
+  color: var(--color-primary-contrast); /* make text white */
+  text-decoration: none; /* remove underline */
+}
+.link:hover {
+  background-color: var(--color-secondary); /* hover effect */
+  color: var(--color-primary-contrast);
+}
+
+.copyright {
+  color: var(--color-primary-contrast);
+}
+.a_tag {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.a_tag:hover {
+  color: var(--color-primary-contrast);
+  text-decoration: underline;
+}
+.spinner {
+  display: inline-block;
+  margin-left: 10px;
+}
+.spinnerRing {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  border-top-color: var(--color-primary-contrast);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tablet & Up (≥768px) */
+@media (min-width: 768px) {
+  .footer {
+    max-width: 999px;
+    margin-left: 23%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+/* Desktop (≥1025px) */
+@media (min-width: 1025px) {
+  .footer {
+    height: auto;
+  }
+}

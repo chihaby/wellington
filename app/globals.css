@@ -23,17 +23,18 @@
   --color-border: #d8e0de;
 }
 /* ------------------------------------------------------------- */
-/* Warm Gray */
+/* Indigo */
 /* :root {
-  --color-primary: #2b2e34;
+  --color-primary: #1f2a44;
   --color-primary-contrast: #ffffff;
 
-  --color-accent: #4a6fa5;
+  --color-secondary: #4a6fa5;
+  --color-accent: #c9a24d;
 
   --color-background: #f5f7fa;
   --color-surface: #ffffff;
 
-  --color-text-primary: #2b2e34;
+  --color-text-primary: #1f2a44;
   --color-text-muted: #6b7280;
 
   --color-border: #e1e4ea;

@@ -1,16 +1,17 @@
-'use client';
-import { useState, useRef } from 'react';
-import { useRouter } from 'next/navigation';
-import ReCAPTCHA from 'react-google-recaptcha';
-import styles from '../styles/Footer.module.css';
-import Link from 'next/link';
-import Row from 'react-bootstrap/Row';
+"use client";
+import { useState, useRef } from "react";
+import { useRouter } from "next/navigation";
+import ReCAPTCHA from "react-google-recaptcha";
+import styles from "../styles/Footer.module.css";
+import Link from "next/link";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Footer = () => {
   const [values, setValues] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -55,7 +56,7 @@ const Footer = () => {
 
     // Ensure captcha solved
     if (!captchaToken) {
-      alert('Please verify that you are human.');
+      alert("Please verify that you are human.");
       return;
     }
 
@@ -64,40 +65,40 @@ const Footer = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
+      const res = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ ...values, token: captchaToken }),
       });
 
       if (!res.ok) {
         const errorData = await res.json().catch(() => ({}));
-        console.error('Server error:', errorData.error || res.statusText);
+        console.error("Server error:", errorData.error || res.statusText);
         setIsSubmitting(false);
         return;
       }
 
       const data = await res.json();
       if (data.success) {
-        console.log('Email sent successfully!');
+        console.log("Email sent successfully!");
         resetInputValues();
       } else {
-        console.error('Error sending email:', data.error);
+        console.error("Error sending email:", data.error);
         setIsSubmitting(false);
       }
     } catch (error) {
-      console.error('Request failed:', error);
+      console.error("Request failed:", error);
       setIsSubmitting(false);
     }
   };
 
   const resetInputValues = () => {
     setValues({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
     setSubmitted(false);
     setValid(false);
@@ -106,7 +107,7 @@ const Footer = () => {
     // Reset captcha after submission
     if (
       recaptchaRef.current &&
-      typeof recaptchaRef.current.reset === 'function'
+      typeof recaptchaRef.current.reset === "function"
     ) {
       recaptchaRef.current.reset();
     }
@@ -114,7 +115,7 @@ const Footer = () => {
 
     // Redirect to thank-you page
     setTimeout(() => {
-      router.push('/thank-you');
+      router.push("/thank-you");
     }, 300);
   };
 
@@ -126,113 +127,117 @@ const Footer = () => {
   );
 
   return (
-    <div style={{ backgroundColor: 'var(--color-primary' }}>
+    <div
+      style={{
+        backgroundColor: "var(--color-primary",
+      }}
+    >
       <footer className={styles.footer}>
-        <div className={styles.footer_form}>
+        <Col sm={12} md={8} lg={8}>
           <br />
           <h1>CONTACT US</h1>
           <br />
-          <form onSubmit={handleSubmit}>
-            <div className={styles.label}>Full Name</div>
-            <input
-              className={styles.form_input}
-              type='text'
-              id='name'
-              placeholder='Your name'
-              required
-              value={values.name}
-              onChange={handleNameInputChange}
-            />
-            {submitted && !values.name && (
-              <div id='first-name-error'>Please enter your full name</div>
-            )}
+          <hr />
+          <div>
+            <span>Phone: (510) 555-5555</span>
             <br />
-            <br />
+            <span>
+              <a
+                href={`mailto:info@wellingtoncma.com`}
+                style={{
+                  padding: "10px 20px",
+                  color: "white",
+                  textDecoration: "none",
+                  borderRadius: "5px",
+                }}
+              >
+                Email: info@wellingtoncma.com
+              </a>
+            </span>
+            <hr />
+          </div>
+          <div className={styles.footer_form}>
+            <form onSubmit={handleSubmit}>
+              <div className={styles.label}>Full Name</div>
+              <input
+                className={styles.form_input}
+                type="text"
+                id="name"
+                placeholder="Your name"
+                required
+                value={values.name}
+                onChange={handleNameInputChange}
+              />
+              {submitted && !values.name && (
+                <div id="first-name-error">Please enter your full name</div>
+              )}
+              <br />
+              <br />
 
-            <div className={styles.label}>Email</div>
-            <input
-              className={styles.form_input}
-              type='email'
-              id='email'
-              placeholder='Your email'
-              required
-              value={values.email}
-              onChange={handleEmailInputChange}
-            />
-            {submitted && !values.email && (
-              <div>Please enter a valid email</div>
-            )}
-            <br />
-            <br />
-            <div className={styles.label}>Message</div>
-            <textarea
-              className={styles.form_message}
-              id='message'
-              placeholder='Message'
-              required
-              value={values.message}
-              onChange={handleMessageInputChange}
-            />
-            {submitted && !values.message && (
-              <div>Please enter your message</div>
-            )}
-            <br />
-            <br />
+              <div className={styles.label}>Email</div>
+              <input
+                className={styles.form_input}
+                type="email"
+                id="email"
+                placeholder="Your email"
+                required
+                value={values.email}
+                onChange={handleEmailInputChange}
+              />
+              {submitted && !values.email && (
+                <div>Please enter a valid email</div>
+              )}
+              <br />
+              <br />
+              <div className={styles.label}>Message</div>
+              <textarea
+                className={styles.form_message}
+                id="message"
+                placeholder="Message"
+                required
+                value={values.message}
+                onChange={handleMessageInputChange}
+              />
+              {submitted && !values.message && (
+                <div>Please enter your message</div>
+              )}
+              <br />
+              <br />
 
-            {/* Google reCAPTCHA */}
-            {/* <ReCAPTCHA
+              {/* Google reCAPTCHA */}
+              {/* <ReCAPTCHA
               ref={recaptchaRef}
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
               onChange={(token) => setCaptchaToken(token)}
             /> */}
-            <br />
+              <br />
 
-            <button
-              className={styles.form_submit}
-              type='submit'
-              id='btnsubmit'
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? 'SENDING...' : 'SUBMIT'}
-            </button>
-            {isSubmitting && <LoadingSpinner />}
-          </form>
+              <button
+                className={styles.form_submit}
+                type="submit"
+                id="btnsubmit"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "SENDING..." : "SUBMIT"}
+              </button>
+              {isSubmitting && <LoadingSpinner />}
+            </form>
+          </div>
           <div className={styles.copyright}>
             <p> Copyright &copy; 2025 WELLINGTON/CMA</p>
             <p>
-              Designed by{' '}
+              Designed by{" "}
               <a
                 className={styles.a_tag}
-                href='https://bayareawebdesign.net'
-                target='_blank'
-                rel='noopener noreferrer'
+                href="https://bayareawebdesign.net"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Bay Area Web Design.Net
               </a>
             </p>
           </div>
-        </div>
-
-        {/* Contact Info */}
-        <hr />
-        <div className={styles.footer_contact}>
-          <span className={styles.contact_phone}>Phone: (510) 555-5555</span>
-          <br />
-          <span className={styles.contact_email}>
-            <a
-              href={`mailto:info@wellington.com`}
-              style={{
-                padding: '10px 20px',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '5px',
-              }}
-            >
-              Email: info@wellington.com
-            </a>
-          </span>
-          <hr />
-        </div>
+        </Col>
       </footer>
     </div>
   );
