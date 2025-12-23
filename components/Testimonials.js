@@ -1,15 +1,15 @@
 // import Image from 'next/image';
-import styles from '../styles/Testimonials.module.css';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import styles from "../styles/Testimonials.module.css";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 // import Link from 'next/link';
 // import WhiteCtaLink from "./WhiteCtaLink";
 
 const Clients = () => {
   return (
-    <div style={{ backgroundColor: '#fafafa' }}>
+    <div style={{ backgroundColor: "var(--color-surface)" }}>
       <div className={styles.container}>
-        <h2 className={styles.main_title}>Testimonials</h2>
+        <h2 className={styles.title}>Clients</h2>
         <Row className={styles.models}>
           <Col sm={12} md={4} className={styles.model_item}>
             <div className={styles.model_title}>Business</div>

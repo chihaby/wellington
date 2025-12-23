@@ -1,28 +1,27 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import styles from '../styles/About.module.css';
-import home_secondary from '../public/assets/svg/home_secondary.svg';
-import Image from 'next/image';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import styles from "../styles/About.module.css";
+import home_secondary from "../public/assets/svg/home_secondary.svg";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ backgroundColor: "var(--color-surface)" }}
+    >
       <Row>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.about_icon}>
             <Image
               src={home_secondary}
-              alt='real estate icon image'
+              alt="real estate icon image"
               width={150}
             />
           </div>
         </Col>
         <Col sm={12} md={6} lg={6}>
-          <div className={styles.title}>
-            <h2 style={{ fontWeight: '600', color: '#1f2d2a' }}>
-              Wellington/CMA
-            </h2>
-          </div>
+          <h2 className={styles.title}>Wellington/CMA</h2>
           <p className={styles.description}>
             A trusted property management company with 15 years of service in
             the Bay Area. We focus on simplifying the rental experience for
@@ -37,7 +36,10 @@ const About = () => {
       </Row>
       <hr />
       <Row>
-        <h3 className={styles.title}>Why Work With Us?</h3>
+        <h4>Why Work With Us?</h4>
+        <br />
+        <br />
+        <br />
         <ul className={styles.list}>
           <li>
             <b>Local Knowledge, Local Advantage:</b>
