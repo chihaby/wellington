@@ -1,8 +1,8 @@
-import styles from "../styles/Navbar.module.css";
-import Link from "next/link";
-import Row from "react-bootstrap/Row";
-import Image from "next/image";
-import logo from "../public/assets/logo/logo.png";
+import styles from '../styles/Navbar.module.css';
+import Link from 'next/link';
+import Row from 'react-bootstrap/Row';
+import Image from 'next/image';
+import logo from '../public/assets/logo/logo.png';
 
 export default function Navbar() {
   return (
@@ -11,27 +11,27 @@ export default function Navbar() {
         <nav>
           <ul>
             <li>
-              <Link href="/">
+              <Link href='/'>
                 <Image
                   className={styles.logo}
-                  alt="bay area web design triangular logo"
+                  alt='bay area web design triangular logo'
                   src={logo}
-                  width={55}
+                  width={50}
                 />
                 <span className={styles.title}>WELLINGTON</span>
               </Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/about">About</Link>
+              <Link href='/'>Home</Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/services">Services</Link>
+              <Link href='/services'>Services</Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/team">Team</Link>
+              <Link href='/team'>Team</Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/contact">Contact</Link>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>
