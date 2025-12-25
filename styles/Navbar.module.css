@@ -4,7 +4,6 @@
   color: var(--color-primary-contrast);
   justify-content: center;
   text-align: center;
-
 }
 .navbar {
   width: 100%;
@@ -138,7 +137,7 @@
   .navbar li:first-child {
     margin-top: -10px;
     margin-right: auto;
-    margin-left: -20px;
+    margin-left: -70px;
     flex-basis: auto;
   }
   .ul_links {

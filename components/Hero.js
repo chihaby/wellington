@@ -1,6 +1,6 @@
 import styles from "../styles/Hero.module.css";
-// import Image from "next/image";
-// import appt1 from "../public/assets/img/appt1.jpg";
+import Image from "next/image";
+import appt1 from "../public/assets/img/appt1.jpg";
 import Cta from "./CTA";
 
 const Hero = () => {
@@ -16,13 +16,13 @@ const Hero = () => {
           <Cta />
         </div>
         <div className={styles.image_hero}>
-          {/* <Image
+          <Image
             src={appt1}
             alt="image of Rad an experienced web developer"
             width={380}
             height={350}
             priority
-          /> */}
+          />
         </div>
       </div>
     </div>
