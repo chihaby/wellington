@@ -1,10 +1,10 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import ReCAPTCHA from "react-google-recaptcha";
 import styles from "../styles/Footer.module.css";
-import Link from "next/link";
-import Row from "react-bootstrap/Row";
+// import Link from "next/link";
+// import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Footer = () => {
@@ -17,11 +17,17 @@ const Footer = () => {
   const [submitted, setSubmitted] = useState(false);
   const [valid, setValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const recaptchaRef = useRef(null);
   const [captchaToken, setCaptchaToken] = useState(null);
 
   const router = useRouter();
+
+  // Add this useEffect to track client-side mounting
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleNameInputChange = (event) => {
     setValues((prev) => ({
@@ -44,8 +50,16 @@ const Footer = () => {
     }));
   };
 
+  const handleCaptchaChange = (token) => {
+    console.log("Captcha token received:", token ? "Yes" : "No");
+    setCaptchaToken(token);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    console.log("Form submitted");
+    console.log("Captcha token state:", captchaToken);
 
     // Validate required fields
     if (!values.name || !values.email || !values.message) {
@@ -54,8 +68,15 @@ const Footer = () => {
       return;
     }
 
+    // Try to get token from ref if state is null
+    let tokenToSend = captchaToken;
+    if (!tokenToSend && recaptchaRef.current) {
+      tokenToSend = recaptchaRef.current.getValue();
+      console.log("Token from ref:", tokenToSend);
+    }
+
     // Ensure captcha solved
-    if (!captchaToken) {
+    if (!tokenToSend) {
       alert("Please verify that you are human.");
       return;
     }
@@ -63,6 +84,11 @@ const Footer = () => {
     setValid(true);
     setSubmitted(true);
     setIsSubmitting(true);
+
+    console.log(
+      "Sending request with token:",
+      tokenToSend ? "present" : "missing"
+    );
 
     try {
       const res = await fetch("/api/contact", {
@@ -205,11 +231,13 @@ const Footer = () => {
               <br />
 
               {/* Google reCAPTCHA */}
-              {/* <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-              onChange={(token) => setCaptchaToken(token)}
-            /> */}
+              {isMounted && (
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                  onChange={handleCaptchaChange}
+                />
+              )}
               <br />
 
               <button

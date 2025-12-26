@@ -51,12 +51,13 @@
 
 /* Small Tablet (≥576px) */
 @media (min-width: 576px) {
-  .models {
+  .reviews {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 2rem;
   }
   .title {
     font-size: 2rem;
@@ -82,9 +83,9 @@
   .container {
     padding: 2em;
     display: flex;
-    min-height: 50vh;
+    height: auto;
   }
-  .models {
+  .reviews {
     justify-content: center;
   }
 }
@@ -97,10 +98,11 @@
     justify-content: center;
     height: auto;
   }
-  .models {
+  .reviews {
     max-width: 999px;
     margin: auto;
     gap: 2em;
+    margin-bottom: 4rem;
   }
   .title {
     text-align: left;
