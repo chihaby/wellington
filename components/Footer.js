@@ -1,17 +1,17 @@
-"use client";
-import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import ReCAPTCHA from "react-google-recaptcha";
-import styles from "../styles/Footer.module.css";
+'use client';
+import { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+// import ReCAPTCHA from 'react-google-recaptcha';
+import styles from '../styles/Footer.module.css';
 // import Link from "next/link";
 // import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
   const [values, setValues] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -51,15 +51,15 @@ const Footer = () => {
   };
 
   const handleCaptchaChange = (token) => {
-    console.log("Captcha token received:", token ? "Yes" : "No");
+    console.log('Captcha token received:', token ? 'Yes' : 'No');
     setCaptchaToken(token);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Form submitted");
-    console.log("Captcha token state:", captchaToken);
+    console.log('Form submitted');
+    console.log('Captcha token state:', captchaToken);
 
     // Validate required fields
     if (!values.name || !values.email || !values.message) {
@@ -72,12 +72,12 @@ const Footer = () => {
     let tokenToSend = captchaToken;
     if (!tokenToSend && recaptchaRef.current) {
       tokenToSend = recaptchaRef.current.getValue();
-      console.log("Token from ref:", tokenToSend);
+      console.log('Token from ref:', tokenToSend);
     }
 
     // Ensure captcha solved
     if (!tokenToSend) {
-      alert("Please verify that you are human.");
+      alert('Please verify that you are human.');
       return;
     }
 
@@ -86,45 +86,45 @@ const Footer = () => {
     setIsSubmitting(true);
 
     console.log(
-      "Sending request with token:",
-      tokenToSend ? "present" : "missing"
+      'Sending request with token:',
+      tokenToSend ? 'present' : 'missing'
     );
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
+      const res = await fetch('/api/contact', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ ...values, token: captchaToken }),
       });
 
       if (!res.ok) {
         const errorData = await res.json().catch(() => ({}));
-        console.error("Server error:", errorData.error || res.statusText);
+        console.error('Server error:', errorData.error || res.statusText);
         setIsSubmitting(false);
         return;
       }
 
       const data = await res.json();
       if (data.success) {
-        console.log("Email sent successfully!");
+        console.log('Email sent successfully!');
         resetInputValues();
       } else {
-        console.error("Error sending email:", data.error);
+        console.error('Error sending email:', data.error);
         setIsSubmitting(false);
       }
     } catch (error) {
-      console.error("Request failed:", error);
+      console.error('Request failed:', error);
       setIsSubmitting(false);
     }
   };
 
   const resetInputValues = () => {
     setValues({
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     });
     setSubmitted(false);
     setValid(false);
@@ -133,7 +133,7 @@ const Footer = () => {
     // Reset captcha after submission
     if (
       recaptchaRef.current &&
-      typeof recaptchaRef.current.reset === "function"
+      typeof recaptchaRef.current.reset === 'function'
     ) {
       recaptchaRef.current.reset();
     }
@@ -141,7 +141,7 @@ const Footer = () => {
 
     // Redirect to thank-you page
     setTimeout(() => {
-      router.push("/thank-you");
+      router.push('/thank-you');
     }, 300);
   };
 
@@ -155,7 +155,7 @@ const Footer = () => {
   return (
     <div
       style={{
-        backgroundColor: "var(--color-primary",
+        backgroundColor: 'var(--color-primary',
       }}
     >
       <footer className={styles.footer}>
@@ -171,10 +171,10 @@ const Footer = () => {
               <a
                 href={`mailto:info@wellingtoncma.com`}
                 style={{
-                  padding: "10px 20px",
-                  color: "white",
-                  textDecoration: "none",
-                  borderRadius: "5px",
+                  padding: '10px 20px',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '5px',
                 }}
               >
                 Email: info@wellingtoncma.com
@@ -187,15 +187,15 @@ const Footer = () => {
               <div className={styles.label}>Full Name</div>
               <input
                 className={styles.form_input}
-                type="text"
-                id="name"
-                placeholder="Your name"
+                type='text'
+                id='name'
+                placeholder='Your name'
                 required
                 value={values.name}
                 onChange={handleNameInputChange}
               />
               {submitted && !values.name && (
-                <div id="first-name-error">Please enter your full name</div>
+                <div id='first-name-error'>Please enter your full name</div>
               )}
               <br />
               <br />
@@ -203,9 +203,9 @@ const Footer = () => {
               <div className={styles.label}>Email</div>
               <input
                 className={styles.form_input}
-                type="email"
-                id="email"
-                placeholder="Your email"
+                type='email'
+                id='email'
+                placeholder='Your email'
                 required
                 value={values.email}
                 onChange={handleEmailInputChange}
@@ -218,8 +218,8 @@ const Footer = () => {
               <div className={styles.label}>Message</div>
               <textarea
                 className={styles.form_message}
-                id="message"
-                placeholder="Message"
+                id='message'
+                placeholder='Message'
                 required
                 value={values.message}
                 onChange={handleMessageInputChange}
@@ -231,22 +231,22 @@ const Footer = () => {
               <br />
 
               {/* Google reCAPTCHA */}
-              {isMounted && (
+              {/* {isMounted && (
                 <ReCAPTCHA
                   ref={recaptchaRef}
                   sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                   onChange={handleCaptchaChange}
                 />
-              )}
+              )} */}
               <br />
 
               <button
                 className={styles.form_submit}
-                type="submit"
-                id="btnsubmit"
+                type='submit'
+                id='btnsubmit'
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "SENDING..." : "SUBMIT"}
+                {isSubmitting ? 'SENDING...' : 'SUBMIT'}
               </button>
               {isSubmitting && <LoadingSpinner />}
             </form>
@@ -254,12 +254,12 @@ const Footer = () => {
           <div className={styles.copyright}>
             <p> Copyright &copy; 2025 WELLINGTON/CMA</p>
             <p>
-              Designed by{" "}
+              Designed by{' '}
               <a
                 className={styles.a_tag}
-                href="https://bayareawebdesign.net"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://bayareawebdesign.net'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Bay Area Web Design.Net
               </a>

@@ -10,11 +10,6 @@
   word-wrap: break-word;
   text-transform: none;
 }
-/* .models {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 .title {
   font-size: 1.75rem;
   font-weight: 500;
@@ -33,9 +28,6 @@
   color: var(--color-text-muted);
 }
 
-/* .view_sevices {
-  display: flex;
-} */
 .cta_link {
   width: 250px;
   text-align: center;
