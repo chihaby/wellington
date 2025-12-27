@@ -1,8 +1,14 @@
 "use client";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
-import styles from "../../styles/ServicePage.module.css";
+import styles from "../../styles/AboutServices.module.css";
 import Accordion from 'react-bootstrap/Accordion';
+import healthcare from '../../public/assets/svg/healthcare.svg';
+import corporate from '../../public/assets/svg/corporate.svg';
+import residential from '../../public/assets/svg/residential.svg';
+import airport from '../../public/assets/svg/airport.svg';
+import valet from '../../public/assets/svg/valet.svg';
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,34 +25,108 @@ const services = () => {
   return (
     <>
       <Navbar />
-      <h1>Services</h1>
-          <Accordion defaultActiveKey="0" flush>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-      <Footer />
+      <h1 className={styles.title}>Services</h1>
+      <div className={styles.paragraph}>
+        <p>
+          rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+      <div className={styles.accordion_div}>
+        <Accordion defaultActiveKey="0" flush>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>
+              <Image 
+                className={styles.icon}
+                alt='icon image of commercial building'   
+                src={corporate} 
+              />&nbsp;    
+              <b>Commercial</b>
+            </Accordion.Header>
+            <Accordion.Body>
+              <ul className={styles.list}>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+              <Image 
+                className={styles.icon}
+                alt='icon image of commercial building'   
+                src={residential} 
+              />&nbsp;   
+              <b>Residential</b></Accordion.Header>
+            <Accordion.Body>
+              <ul className={styles.list}>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+              <Image 
+                className={styles.icon}
+                alt='icon image of commercial building'   
+                src={healthcare} 
+              />&nbsp;   
+              <b>Healthcare</b></Accordion.Header>
+            <Accordion.Body>
+              <ul className={styles.list}>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>
+              <Image 
+                className={styles.icon}
+                alt='icon image of commercial building'   
+                src={airport} 
+              />&nbsp;   
+              <b>Airport</b></Accordion.Header>
+            <Accordion.Body>
+              <ul className={styles.list}>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>
+              <Image 
+                className={styles.icon}
+                alt='icon image of commercial building'   
+                src={valet} 
+              />&nbsp;   
+              <b>Valet</b></Accordion.Header>
+            <Accordion.Body>
+              <ul className={styles.list}>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </div>
+    <Footer />
     </>
   );
 };
