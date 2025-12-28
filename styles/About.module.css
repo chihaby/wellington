@@ -48,14 +48,14 @@
     max-width: 999px;
     height: auto;
   }
+  .title {
+    font-size: 2rem;
+  }
   .icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25%;
-  }
-  .title {
-    font-size: 2rem;
   }
 }
 
@@ -70,13 +70,12 @@
     font-weight: 550;
     line-height: 1.5em;
   }
+  .icon {
+    margin-top: 35%;
+  }
   .subtitle {
     text-align: left;
     margin: auto;
-  }
-  .more {
-    position: relative;
-    left: -20;
   }
 }
 

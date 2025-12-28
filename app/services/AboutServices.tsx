@@ -25,14 +25,14 @@ const services = () => {
   return (
     <>
       <Navbar />
-      <h1 className={styles.title}>Services</h1>
-      <div className={styles.paragraph}>
+      <div className={styles.top_section}>
+        <span className={styles.title}><b>Services</b></span>
         <p>
-          rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          We manage parking for residential, commercial, medical, and large-scale properties with a hands-on, local approach focused on results. Our nearby teams respond quickly to maintenance and repairs, reducing downtime, preventing misuse, and keeping parking areas operating at full capacity. By improving efficiency, compliance, and space utilization, our parking management services help property owners increase revenue, lower operating costs, and protect long-term asset value.
         </p>
       </div>
       <div className={styles.accordion_div}>
-        <Accordion defaultActiveKey="0" flush>
+        <Accordion flush>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               <Image 
@@ -48,7 +48,6 @@ const services = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
@@ -66,7 +65,6 @@ const services = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
               </ul>
           </Accordion.Body>
         </Accordion.Item>
@@ -84,7 +82,6 @@ const services = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
               </ul>
           </Accordion.Body>
         </Accordion.Item>
@@ -102,7 +99,6 @@ const services = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
               </ul>
           </Accordion.Body>
         </Accordion.Item>
@@ -120,7 +116,6 @@ const services = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
               </ul>
           </Accordion.Body>
         </Accordion.Item>

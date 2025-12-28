@@ -1,27 +1,27 @@
-import styles from "../styles/Services.module.css";
-import Image from "next/image";
-import parking from "../public/assets/svg/parking_primary.svg";
-import Commercial from "../public/assets/svg/commercial_primary.svg";
-import events from "../public/assets/svg/events.svg";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Cta from "./CTA2";
+import styles from '../styles/Services.module.css';
+import Image from 'next/image';
+import parking from '../public/assets/svg/parking_primary.svg';
+import Commercial from '../public/assets/svg/commercial_primary.svg';
+import events from '../public/assets/svg/events.svg';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Cta from './CTA2';
 
 const Benefit = () => {
   return (
-    <div style={{ backgroundColor: "var(--color-background)" }}>
+    <div style={{ backgroundColor: 'var(--color-background)' }}>
       <div className={styles.container}>
         <h2 className={styles.title}>Services</h2>
         <br />
-        <Row style={{ padding: "16px" }}>
+        <Row style={{ padding: '16px' }}>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
                 src={parking}
-                alt="parking icon image"
+                alt='parking icon image'
                 width={60}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
@@ -29,7 +29,7 @@ const Benefit = () => {
               <span>Parking</span>
             </div>
             <div className={styles.description}>
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industry standard dummy text ever since
               the 1500s
             </div>
           </Col>
@@ -37,10 +37,10 @@ const Benefit = () => {
             <div className={styles.icon}>
               <Image
                 src={Commercial}
-                alt="commercial building icon"
+                alt='commercial building icon'
                 width={60}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
@@ -48,18 +48,18 @@ const Benefit = () => {
               <span>Property</span>
             </div>
             <div className={styles.description}>
-              Commercial {"&"} Residentialbeen the industry's standard dummy
-              text ever since the 1500s
+              Commercial {'&'} Residentialbeen the industry standard dummy text
+              ever since the 1500s
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
                 src={events}
-                alt="logo design"
+                alt='logo design'
                 width={60}
                 style={{
-                  margin: "auto",
+                  margin: 'auto',
                 }}
               />
             </div>
@@ -67,7 +67,7 @@ const Benefit = () => {
               <span>Events</span>
             </div>
             <div className={styles.description}>
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industry standard dummy text ever since
               the 1500s
             </div>
           </Col>

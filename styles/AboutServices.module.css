@@ -1,39 +1,123 @@
+/* ================================
+  Base Styles — Mobile First
+  Phones (≤575px)
+================================ */
+.top_section {
+  padding: 1.25rem 1rem;
+  line-height: 1.6;
+}
 
+.title {
+  font-size: 1.25rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--color-text-primary);
+}
 
-/* Optional: larger tap-friendly spacing on very small devices */
-  .title {
-    padding: 1.25rem;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .list li {
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-  }
-  .paragraph {
-    padding: 1.25rem;
-  }
-  .icon {
-      width: 1.75rem;
-      height: auto;
-      max-width: 100%;
+.list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.icon {
+  width: 1.75rem;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ================================
+  Tablets (≥576px)
+================================ */
+
+@media (min-width: 576px) {
+  .top_section {
+      padding: 1.5rem;
     }
 
-@media (min-width: 768px) {
   .title {
-    text-align: left;
-    margin: 2rem 6rem;
+    font-size: 1.6rem;
+    padding: 1.5rem;
   }
-  .paragraph {
+
+  .list li {
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    width: 2rem;
+  }
+}
+
+/* ================================
+  Tablet Landscape / Small Laptop (≥768px)
+================================ */
+
+@media (min-width: 768px) {
+  .top_section {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0;
+    margin-top: 4rem;
   }
+
+  .title {
+    text-align: left;
+    font-size: 2rem;
+    padding: 0;
+  }
+
   .accordion_div {
     width: 750px;
     margin: 0 auto;
     padding: 2rem;
   }
+
   .icon {
     width: 2.25rem;
+  }
+}
+
+/* ================================
+  Laptop (≥1024px)
+================================ */
+
+@media (min-width: 1024px) {
+  .top_section {
+      max-width: 900px;
+    }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .accordion_div {
+    width: 850px;
+  }
+
+  .icon {
+    width: 2.5rem;
+  }
+}
+
+/* ================================
+  Desktop / Large Screens (≥1280px)
+================================ */
+
+@media (min-width: 1280px) {
+  .top_section {
+      max-width: 1000px;
+    }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .accordion_div {
+    width: 950px;
+  }
+
+  .icon {
+    width: 2.75rem;
   }
 }
