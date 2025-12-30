@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
-import styles from "../../styles/ServicePage.module.css";
+import styles from "../../styles/AboutTeam.module.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,14 +18,54 @@ export const metadata: Metadata = {
   },
 };
 
-const Team = () => {
+const teamMembers = [
+  {
+    name: "Alex Johnson",
+    role: "Frontend Developer",
+    image: "https://via.placeholder.com/300",
+  },
+  {
+    name: "Maria Lopez",
+    role: "UX Designer",
+    image: "https://via.placeholder.com/300",
+  },
+  {
+    name: "James Smith",
+    role: "Backend Engineer",
+    image: "https://via.placeholder.com/300",
+  },
+  {
+    name: "Sarah Kim",
+    role: "Product Manager",
+    image: "https://via.placeholder.com/300",
+  },
+];
+
+export default function Team() {
   return (
     <>
       <Navbar />
-      <h1>Team</h1>
+      <main className={styles.team_container}>
+        <header className={styles.team_container}>
+          <h1>Meet the Team</h1>
+          <p>The people who make everything possible</p>
+        </header>
+
+        <section className="team-grid">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-card">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="team-image"
+              />
+              <h3>{member.name}</h3>
+              <span>{member.role}</span>
+            </div>
+          ))}
+        </section>
+      </main>
       <Footer />
     </>
   );
-};
-
-export default Team;
+}
