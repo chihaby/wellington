@@ -1,5 +1,5 @@
 /* Page container */
-.team-container {
+.team_container {
   padding: 4rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -8,31 +8,32 @@
 }
 
 /* Header */
-.team-header {
+.team_header {
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--color-text-primaryprimary);
 }
 
-.team-header h1 {
+.team_header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.team-header p {
-  color: #666;
+.team_header p {
+  color: var(--color-text-muted);
   font-size: 1.1rem;
 }
 
 /* Grid layout */
-.team-grid {
+.team_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
 /* Team card */
-.team-card {
-  background: #ffffff;
+.team_card {
+  color: var(--color-text-primary);
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -40,13 +41,8 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.team-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-}
-
 /* Image */
-.team-image {
+.team_image {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -55,23 +51,23 @@
 }
 
 /* Text */
-.team-card h3 {
+.team_card h3 {
   margin: 0.5rem 0 0.25rem;
   font-size: 1.2rem;
 }
 
-.team-card span {
-  color: #777;
+.team_card span {
+  color: var(--color-text-muted);
   font-size: 0.95rem;
 }
 
 /* Mobile adjustments */
 @media (max-width: 480px) {
-  .team-header h1 {
+  .team_header h1 {
     font-size: 2rem;
   }
 
-  .team-container {
+  .team_container {
     padding: 3rem 1rem;
   }
 }
