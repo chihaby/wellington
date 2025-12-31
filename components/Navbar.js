@@ -28,7 +28,7 @@ export default function Navbar() {
               <Link href="/services">Services</Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/team">Team</Link>
+              <Link href="/team2">Team</Link>
             </li>
             <li className={styles.ul_links}>
               <Link href="/contact">Contact</Link>

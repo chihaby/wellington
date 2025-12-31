@@ -21,21 +21,29 @@ const teamMembers = [
   {
     name: "Alex Johnson",
     role: "Frontend Developer",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: male_icon,
   },
   {
     name: "Maria Lopez",
     role: "UX Designer",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: female_icon,
   },
   {
     name: "James Smith",
     role: "Backend Engineer",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: male_icon,
   },
   {
     name: "Sarah Kim",
     role: "Product Manager",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: female_icon,
   },
 ];
@@ -57,11 +65,11 @@ export default function Team() {
                 src={member.image}
                 alt={member.name}
                 className={styles.team_image}
-                width={100}
                 height={200}
               />
               <h3>{member.name}</h3>
               <span>{member.role}</span>
+              <span>{member.about}</span>
             </div>
           ))}
         </section>
