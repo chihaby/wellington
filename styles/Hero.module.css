@@ -106,8 +106,8 @@
   }
   .image_hero {
     position: absolute;
-    flex-basis: 35%;
-    left: 840px;
+    /* flex-basis: 35%; */
+    left: 800px;
   }
 }
 
