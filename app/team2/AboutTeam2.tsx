@@ -62,6 +62,7 @@ export default function TeamAlt() {
               <h2>{member.name}</h2>
               <h4>{member.role}</h4>
               <p>{member.bio}</p>
+              <hr />
             </div>
           </section>
         ))}

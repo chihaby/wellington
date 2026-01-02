@@ -4,20 +4,20 @@
   color: var(--color-primary-contrast);
   justify-content: center;
   text-align: center;
+  padding-bottom: 1rem;
 }
 .navbar {
   width: 100%;
 }
 .logo {
   float: left;
-  margin-bottom: 1.5rem;
 }
 .title {
   position: relative;
   font-size: 1.75rem;
   font-weight: 600;
   margin: auto;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 .navbar ul {
   list-style-type: none;
