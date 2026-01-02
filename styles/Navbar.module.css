@@ -106,13 +106,12 @@
 @media (min-width: 1025px) {
   .logo {
     position: relative;
-    top: 0px;
-    margin-left: 50px;
+    top: -40px;
+    margin: 0 auto;
   }
   .title {
     position: relative;
     top: 0px;
-    left: 25px;
   }
   .navbar ul {
     display: flex;

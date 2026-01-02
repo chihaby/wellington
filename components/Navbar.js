@@ -16,7 +16,7 @@ export default function Navbar() {
                   className={styles.logo}
                   alt="bay area web design triangular logo"
                   src={logo}
-                  width={50}
+                  width={150}
                 />
                 <span className={styles.title}>WELLINGTON/CMA</span>
               </Link>
