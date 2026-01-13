@@ -18,7 +18,7 @@ export default function Navbar() {
                   src={logo}
                   width={150}
                 />
-                <span className={styles.title}>WELLINGTON/CMA</span>
+                <div className={styles.title}>WELLINGTON/CMA</div>
               </Link>
             </li>
             <li className={styles.ul_links}>
@@ -28,7 +28,7 @@ export default function Navbar() {
               <Link href="/services">Services</Link>
             </li>
             <li className={styles.ul_links}>
-              <Link href="/team2">Team</Link>
+              <Link href="/team">Team</Link>
             </li>
             <li className={styles.ul_links}>
               <Link href="/contact">Contact</Link>
