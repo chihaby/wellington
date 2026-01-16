@@ -63,7 +63,7 @@
     min-height: 12rem;
   }
   .strapline {
-    font-size: 24px;
+    font-size: 21px;
     text-align: left;
   }
 }
@@ -76,7 +76,7 @@
     padding: 4em;
   }
   .strapline {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 600;
     float: left;
   }
@@ -91,22 +91,18 @@
     height: auto;
     max-width: 1200px;
     margin: auto;
-    /* margin-bottom: 25px; */
   }
   .left_side {
-    /* flex-basis: 60%; */
     padding-top: 0rem;
     padding-bottom: 2rem;
   }
   .strapline {
-    font-size: 25px;
     line-height: 1.6;
     width: 550px;
     margin-bottom: 50px;
   }
   .image_hero {
     position: absolute;
-    /* flex-basis: 35%; */
     left: 700px;
     top: 0px;
   }
@@ -123,7 +119,6 @@
     padding-bottom: 0rem;
   }
   .image_hero {
-    /* flex-basis: 15%; */
     left: 1040px;
     top: 150px;
   }

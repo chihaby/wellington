@@ -5,6 +5,7 @@ import Footer from "../../components/Footer.js";
 import styles from "../../styles/AboutTeam.module.css";
 import male_icon from "../../public/assets/svg/male.svg";
 import female_icon from "../../public/assets/svg/female.svg";
+import partners from "../../public/assets/img/partners.jpg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -57,7 +58,16 @@ export default function Team() {
           <h1>Meet the Team</h1>
           <p>The people who make everything possible</p>
         </header>
-
+        <div >
+          <Image
+          className={styles.image_wrapper}
+            src={partners}
+            alt="Company logo"
+            width={300}
+            height={120}
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </div>
         <section className={styles.team_grid}>
           {teamMembers.map((member, index) => (
             <div key={index} className={styles.team_card}>

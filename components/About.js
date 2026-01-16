@@ -23,13 +23,13 @@ const About = () => {
         <Col sm={12} md={6} lg={6}>
           <h2 className={styles.title}>Wellington/CMA</h2>
           <p className={styles.description}>
-            A trusted property management company with 15 years of service in
-            the Bay Area. We focus on simplifying the rental experience for
-            owners and tenants alike, ensuring every property is
-            well-maintained, efficiently managed, and consistently profitable.
-            From tenant screening to rent collection, our dedicated team handles
-            every detail so you can enjoy peace of mind and maximize your
-            investment.
+            A trusted asset management company in the East Bay since 2014.
+            Combining the forces of two long term East Bay companies, serving
+            the community for decades. We focus on managing properties and
+            operations oversight for the most consistent, economical, and
+            profitable outcome for our clients. Pursuing trusted methods as well
+            as employing new technology to maximize client investment and peace
+            of mind.
           </p>
           <br />
         </Col>
@@ -50,24 +50,18 @@ const About = () => {
               </p>
             </li>
             <li>
-              <b>Dedicated Property Manager:</b>
+              <b>Dedicated Property Team:</b>
               <p>
-                A single point of contact who knows your property and is
-                dedicated to your success.
+                A single point of contact who knows your property and is backed
+                by a diverse team dedicated to your success. Maintaining
+                business hours and afterhours emergency services.
               </p>
             </li>
             <li>
-              <b>Tenant Screening & Retention:</b>
+              <b>Partnership:</b>
               <p>
-                We find the best tenants and ensure they are happy, reducing
-                turnover and maximizing rental income.
-              </p>
-            </li>
-            <li>
-              <b>24/7 Availability:</b>
-              <p>
-                Always here when you need us—whether it is an emergency
-                maintenance issue or a routine inquiry.
+                Our clients are our partners in the community. We are ready to
+                assist in your new endeavors and consult on major changes.
               </p>
             </li>
           </ul>
