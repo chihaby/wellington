@@ -1,21 +1,21 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import styles from '../styles/About.module.css';
-import home_secondary from '../public/assets/svg/home_secondary.svg';
-import Image from 'next/image';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import styles from "../styles/About.module.css";
+import home_secondary from "../public/assets/svg/home_secondary.svg";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div
       className={styles.container}
-      style={{ backgroundColor: 'var(--color-surface)' }}
+      style={{ backgroundColor: "var(--color-surface)" }}
     >
       <Row>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.icon}>
             <Image
               src={home_secondary}
-              alt='real estate icon image'
+              alt="real estate icon image"
               width={150}
             />
           </div>
@@ -36,7 +36,7 @@ const About = () => {
       </Row>
       <hr />
       <Row>
-        <h4 className={styles.subtitle}>Why Wellington?</h4>
+        <h4 className={styles.subtitle}>Why Wellington/CMA?</h4>
         <br />
         <br />
         <br />
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <b>Dedicated Property Team:</b>
+              <b>Dedicated Management Team:</b>
               <p>
                 A single point of contact who knows your property and is backed
                 by a diverse team dedicated to your success. Maintaining
