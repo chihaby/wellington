@@ -70,9 +70,11 @@
   .team_container {
     padding: 3rem 1rem;
   }
+}
 
+/* Tablet & Up (≥768px) */
+@media (min-width: 768px) {
   .image_wrapper {
-    margin: 0 auto;
+    text-align: center;
   }
-
 }
