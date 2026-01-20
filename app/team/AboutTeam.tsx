@@ -1,4 +1,5 @@
 "use client";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   title: "Services | Bay Area Web Design",
   description:
     "View bay area web design services for small, medium businesses and industry professionals",
-  metadataBase: new URL("https://bayareawebdesign.net"),
+  metadataBase: new URL("https://wellingtoncma.com"),
   alternates: {
     canonical: "/services",
   },
