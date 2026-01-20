@@ -29,9 +29,17 @@ const Benefit = () => {
               <span>Parking</span>
             </div>
             <div className={styles.description}>
-              Parking lot or structure, we will manage it for its best revenue
+              {/* Parking lot or structure, we will manage it for its best revenue
               outcome and with an eye toward serving the greater
-              retail/entertainment/residential community.
+              retail/entertainment/residential community. */}
+              {/* We deliver a safe, seamless parking experience for monthly,
+              transient, and event customers by anticipating patron needs,
+              staying informed on factors that impact our facilities, and
+              partnering with trusted local vendors who respond quickly and
+              efficiently. */}
+              Our mission is to serve people and strengthen communities by
+              providing safe, welcoming, and thoughtfully managed parking
+              environments.
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
@@ -46,9 +54,13 @@ const Benefit = () => {
               />
             </div>
             <div className={styles.item_title}>
-              <span>Property</span>
+              <span>property</span>
             </div>
-            <div className={styles.description}>Commercial</div>
+            <div className={styles.description}>
+              We partner with clients to manage their commercial and residential
+              properties, providing hands-on operational oversight that drives
+              reliable, economical, and profitable results.
+            </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
@@ -65,8 +77,15 @@ const Benefit = () => {
               <span>Events</span>
             </div>
             <div className={styles.description}>
-              We will work with local event spaces and proprietors to provide
-              parking that meets your customers{"’"} needs.
+              {/* We will work with local event spaces and proprietors to provide
+              parking that meets your customers{"’"} needs. */}
+              {/* Our success in event parking is driven by strong partnerships with
+              entertainment groups and local venues, seamless collaboration
+              between attendants and security to ensure vehicle safety, and the
+              use of efficient technology that enables patrons to pay, park, and
+              reach their destinations quickly and effortlessly. */}
+              Our approach to event parking is grounded in teamwork, a
+              commitment to safety, and the power of technology.
             </div>
           </Col>
         </Row>

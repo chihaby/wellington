@@ -2,12 +2,12 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
 import styles from "../../styles/AboutServices.module.css";
-import Accordion from 'react-bootstrap/Accordion';
-import healthcare from '../../public/assets/svg/healthcare.svg';
-import corporate from '../../public/assets/svg/corporate.svg';
-import residential from '../../public/assets/svg/residential.svg';
-import airport from '../../public/assets/svg/airport.svg';
-import valet from '../../public/assets/svg/valet.svg';
+import Accordion from "react-bootstrap/Accordion";
+import healthcare from "../../public/assets/svg/healthcare.svg";
+import corporate from "../../public/assets/svg/corporate.svg";
+import residential from "../../public/assets/svg/residential.svg";
+import airport from "../../public/assets/svg/airport.svg";
+import valet from "../../public/assets/svg/valet.svg";
 import Image from "next/image";
 import type { Metadata } from "next";
 
@@ -26,102 +26,176 @@ const services = () => {
     <>
       <Navbar />
       <div className={styles.top_section}>
-        <span className={styles.title}><b>Services</b></span>
+        <span className={styles.title}>
+          <b>Services</b>
+        </span>
         <p>
-          We manage parking for residential, commercial, medical, and large-scale properties with a hands-on, local approach focused on results. Our nearby teams respond quickly to maintenance and repairs, reducing downtime, preventing misuse, and keeping parking areas operating at full capacity. By improving efficiency, compliance, and space utilization, our parking management services help property owners increase revenue, lower operating costs, and protect long-term asset value.
+          We manage parking for residential, commercial, medical, and
+          large-scale properties with a hands-on, local approach focused on
+          results. Our nearby teams respond quickly to maintenance and repairs,
+          reducing downtime, preventing misuse, and keeping parking areas
+          operating at full capacity. By improving efficiency, compliance, and
+          space utilization, our parking management services help property
+          owners increase revenue, lower operating costs, and protect long-term
+          asset value.
         </p>
       </div>
       <div className={styles.accordion_div}>
         <Accordion flush>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              <Image 
+              <Image
                 className={styles.icon}
-                alt='icon image of commercial building'   
-                src={corporate} 
-              />&nbsp;    
-              <b>Commercial</b>
+                alt="icon image of commercial building"
+                src={corporate}
+              />
+              &nbsp;
+              <b>Parking</b>
             </Accordion.Header>
             <Accordion.Body>
               <ul className={styles.list}>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>
+                  We deliver reliable and seamless parking experience for
+                  monthly, transient, and event customers by anticipating patron
+                  needs.
+                </li>
+                <li>
+                  We lead with awareness and responsibility, staying informed
+                  about weather conditions, neighborhood dynamics, and city
+                  policies to ensure our operations support both our customers
+                  and the communities around us.
+                </li>
+                <li>
+                  We are committed to investing locally, building strong
+                  partnerships with trusted vendors and tradespeople to deliver
+                  reliable facility support while contributing to the local
+                  economy.
+                </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              <Image 
+              <Image
                 className={styles.icon}
-                alt='icon image of commercial building'   
-                src={residential} 
-              />&nbsp;   
-              <b>Residential</b></Accordion.Header>
+                alt="icon image of commercial building"
+                src={residential}
+              />
+              &nbsp;
+              <b>Properties</b>
+            </Accordion.Header>
             <Accordion.Body>
               <ul className={styles.list}>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>
+                  Our facility management and maintenance teams work
+                  synergistically to maintain all properties at optimal
+                  condition.
+                </li>
+                <li>
+                  We provide reserved planning and consulting services for major
+                  capital projects to keep our client informed of facility
+                  needs.
+                </li>
+                <li>
+                  We utilize trusted small local contractors and vendors that
+                  consistently deliver excellent services to the properties we
+                  manage.
+                </li>
               </ul>
-          </Accordion.Body>
-        </Accordion.Item>
+            </Accordion.Body>
+          </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <Image 
+              <Image
                 className={styles.icon}
-                alt='icon image of commercial building'   
-                src={healthcare} 
-              />&nbsp;   
-              <b>Healthcare</b></Accordion.Header>
+                alt="icon image of commercial building"
+                src={healthcare}
+              />
+              &nbsp;
+              <b>Events</b>
+            </Accordion.Header>
             <Accordion.Body>
               <ul className={styles.list}>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>
+                  Our partnerships and continuous communication with
+                  entertainment groups and local venues ensures smooth event
+                  operations.
+                </li>
+                <li>
+                  The coordinated efforts between parking, security and
+                  maintenance teams delivers a safe, worry-free experience for
+                  patrons.
+                </li>
+                <li>
+                  The smart technology solutions that we implement make paying,
+                  parking, and accessing event locations fast and convenient.
+                </li>
               </ul>
-          </Accordion.Body>
-        </Accordion.Item>
+            </Accordion.Body>
+          </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>
-              <Image 
+              <Image
                 className={styles.icon}
-                alt='icon image of commercial building'   
-                src={airport} 
-              />&nbsp;   
-              <b>Airport</b></Accordion.Header>
+                alt="icon image of commercial building"
+                src={airport}
+              />
+              &nbsp;
+              <b>Airport</b>
+            </Accordion.Header>
             <Accordion.Body>
               <ul className={styles.list}>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </li>
+                <li>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse.
+                </li>
               </ul>
-          </Accordion.Body>
-        </Accordion.Item>
+            </Accordion.Body>
+          </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>
-              <Image 
+              <Image
                 className={styles.icon}
-                alt='icon image of commercial building'   
-                src={valet} 
-              />&nbsp;   
-              <b>Valet</b></Accordion.Header>
+                alt="icon image of commercial building"
+                src={valet}
+              />
+              &nbsp;
+              <b>Valet</b>
+            </Accordion.Header>
             <Accordion.Body>
               <ul className={styles.list}>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </li>
+                <li>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse.
+                </li>
               </ul>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    </div>
-    <Footer />
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+      <Footer />
     </>
   );
 };

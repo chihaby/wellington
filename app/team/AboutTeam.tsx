@@ -3,10 +3,16 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
 import styles from "../../styles/AboutTeam.module.css";
-import male_icon from "../../public/assets/svg/male.svg";
-import female_icon from "../../public/assets/svg/female.svg";
 import partners from "../../public/assets/img/partners.jpg";
-import type { Metadata } from "next";
+import chris from "../../public/assets/img/chris.jpeg";
+import christine from "../../public/assets/img/christine.jpeg";
+import aja from "../../public/assets/img/aja.jpeg";
+import holt from "../../public/assets/img/holt.jpeg";
+import kelly from "../../public/assets/img/kelly.jpeg";
+import michelle from "../../public/assets/img/michelle.png";
+import ray from "../../public/assets/img/ray.jpeg";
+import ricardo from "../../public/assets/img/ricardo.jpeg";
+import tad from "../../public/assets/img/tad.jpeg";
 
 export const metadata: Metadata = {
   title: "Services | Bay Area Web Design",
@@ -20,67 +26,67 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Ricardo da Silva",
-    role: "Wellington Property Company",
-    about:
-      "With over fifteen years of experience providing commercial brokerage {'&'}amp; consulting services, Mr.Ricardo da Silva has successfully represented numerous user, investor and developer clients in a variety of commercial property purchase, sale and lease transactions. Mr. da Silva is a graduate of Boston College.",
-    image: male_icon,
-  },
-  {
-    name: "Tad Lacey",
-    role: "CMA Asset Managers, Inc.r",
+    name: "Aja Latham",
+    role: "CMA Asset Managers, Inc. Office Administrator",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: female_icon,
+    image: aja,
   },
   {
     name: "Chris Gray",
     role: "Senior Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: male_icon,
+    image: chris,
   },
   {
     name: "Christine Green",
     role: "CMA Asset Managers, Inc.",
     about:
       "Boss Ninja Lady A rampant generalist who oversees all aspects of the business. Always looking for opportunities for optimization and to complete her lifetime certification in Kaizen. Proactive manager who resists a reactive environment. Always wishing her team gets to do exactly what they want, while fulfilling the needs of the company. A double Major BA from SFSU, apparently Christine still speaks some Spanish and French. Christine has lived the majority of her life in the Bay Area. Along with her resistant family, she is a budding naturalist with a distinct caterpillar problem. Desperately seeking new canine companion to complete her family. Will settle for bird watching on weekends.",
-    image: female_icon,
-  },
-  {
-    name: "Michelle Hardy",
-    role: "CMA Asset Managers, Inc. Senior Administrator",
-    about:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: female_icon,
-  },
-  {
-    name: "Raynald Jean-Gilles",
-    role: "CMA Asset Managers, Inc. Assistant Asset Manager",
-    about:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: male_icon,
+    image: christine,
   },
   {
     name: "D. Holt Lacey",
     role: "CMA Asset Managers, Inc. Facilities and Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: male_icon,
-  },
-  {
-    name: "Aja Latham",
-    role: "CMA Asset Managers, Inc. Office Administrator",
-    about:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: female_icon,
+    image: holt,
   },
   {
     name: "Kelly Tran",
     role: "Wellington Property Company Senior Operation Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: female_icon,
+    image: kelly,
+  },
+  {
+    name: "Michelle Hardy",
+    role: "CMA Asset Managers, Inc. Senior Administrator",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: michelle,
+  },
+  {
+    name: "Raynald Jean-Gilles",
+    role: "CMA Asset Managers, Inc. Assistant Asset Manager",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: ray,
+  },
+  {
+    name: "Ricardo da Silva",
+    role: "Wellington Property Company",
+    about:
+      "With over fifteen years of experience providing commercial brokerage {'&'}amp; consulting services, Mr.Ricardo da Silva has successfully represented numerous user, investor and developer clients in a variety of commercial property purchase, sale and lease transactions. Mr. da Silva is a graduate of Boston College.",
+    image: ricardo,
+  },
+  {
+    name: "Tad Lacey",
+    role: "CMA Asset Managers, Inc.r",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: tad,
   },
 ];
 
@@ -109,10 +115,6 @@ export default function Team() {
               1500s, when an unknown printer took a galley of type and scrambled
               it to make a type specimen book. It has survived not only five
               centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum
             </em>
           </p>
         </div>

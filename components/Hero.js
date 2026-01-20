@@ -1,8 +1,7 @@
-import styles from '../styles/Hero.module.css';
-import Image from 'next/image';
-import appt1 from '../public/assets/img/appt1.jpg';
-import parking from '../public/assets/img/parking2.jpg';
-import Cta from './CTA';
+import styles from "../styles/Hero.module.css";
+import Image from "next/image";
+import appt from "../public/assets/img/appt.jpg";
+import Cta from "./CTA";
 
 const Hero = () => {
   return (
@@ -18,8 +17,8 @@ const Hero = () => {
         </div>
         <div className={styles.image_hero}>
           <Image
-            src={appt1}
-            alt='image of Rad an experienced web developer'
+            src={appt}
+            alt="image of Rad an experienced web developer"
             height={350}
             width={380}
             priority
