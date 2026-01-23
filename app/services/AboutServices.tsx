@@ -54,21 +54,24 @@ const services = () => {
             <Accordion.Body>
               <ul className={styles.list}>
                 <li>
-                  We deliver reliable and seamless parking experience for
+                  {/* We deliver reliable and seamless parking experience for
                   monthly, transient, and event customers by anticipating patron
-                  needs.
+                  needs. */}
+                  Your monthly, transient, and event parking runs smoothly through proactive planning that anticipates your needs
                 </li>
                 <li>
-                  We lead with awareness and responsibility, staying informed
+                  {/* We lead with awareness and responsibility, staying informed
                   about weather conditions, neighborhood dynamics, and city
                   policies to ensure our operations support both our customers
-                  and the communities around us.
+                  and the communities around us. */}
+                  You can rely on parking operations that account for weather, neighborhood dynamics, and city regulations.
                 </li>
                 <li>
-                  We are committed to investing locally, building strong
+                  {/* We are committed to investing locally, building strong
                   partnerships with trusted vendors and tradespeople to deliver
                   reliable facility support while contributing to the local
-                  economy.
+                  economy. */}
+                  Get a reliable facility support through strong local partnerships that also contribute to the local economy.
                 </li>
               </ul>
             </Accordion.Body>
@@ -86,19 +89,22 @@ const services = () => {
             <Accordion.Body>
               <ul className={styles.list}>
                 <li>
-                  Our facility management and maintenance teams work
+                  {/* Our facility management and maintenance teams work
                   synergistically to maintain all properties at optimal
-                  condition.
+                  condition. */}
+                  Your properties are kept in optimal condition through coordinated facility management and maintenance teams.
                 </li>
                 <li>
-                  We provide reserved planning and consulting services for major
+                  {/* We provide reserved planning and consulting services for major
                   capital projects to keep our client informed of facility
-                  needs.
+                  needs. */}
+                  Receive tailored planning and consulting services for major capital projects, so you remain informed about current and future facility needs.
                 </li>
                 <li>
-                  We utilize trusted small local contractors and vendors that
+                  {/* We utilize trusted small local contractors and vendors that
                   consistently deliver excellent services to the properties we
-                  manage.
+                  manage. */}
+                  Your properties are cared for by dependable local contractors and vendors who consistently meet our high service standards.
                 </li>
               </ul>
             </Accordion.Body>
@@ -116,9 +122,10 @@ const services = () => {
             <Accordion.Body>
               <ul className={styles.list}>
                 <li>
-                  Our partnerships and continuous communication with
+                  {/* Our partnerships and continuous communication with
                   entertainment groups and local venues ensures smooth event
-                  operations.
+                  operations. */}
+                  You benefit from a seamless event operations thanks to established partnerships and continuous coordination with entertainment groups and local venues.
                 </li>
                 <li>
                   The coordinated efforts between parking, security and
