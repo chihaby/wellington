@@ -125,7 +125,7 @@ const services = () => {
                   {/* Our partnerships and continuous communication with
                   entertainment groups and local venues ensures smooth event
                   operations. */}
-                  You benefit from a seamless event operations thanks to established partnerships and continuous coordination with entertainment groups and local venues.
+                  Benefit from a seamless event operations thanks to established partnerships and continuous coordination with entertainment groups and local venues.
                 </li>
                 <li>
                   The coordinated efforts between parking, security and
