@@ -3,9 +3,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
 import styles from "../../styles/AboutServices.module.css";
 import Accordion from "react-bootstrap/Accordion";
-import healthcare from "../../public/assets/svg/healthcare.svg";
-import corporate from "../../public/assets/svg/corporate.svg";
-import residential from "../../public/assets/svg/residential.svg";
+import parking from "../../public/assets/svg/parking.svg";
+import commercial from "../../public/assets/svg/commercial.svg";
 import events from "../../public/assets/svg/events.svg";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -46,7 +45,7 @@ const services = () => {
               <Image
                 className={styles.icon}
                 alt="icon image of commercial building"
-                src={corporate}
+                src={parking}
               />
               &nbsp;
               <b>Parking</b>
@@ -57,21 +56,24 @@ const services = () => {
                   {/* We deliver reliable and seamless parking experience for
                   monthly, transient, and event customers by anticipating patron
                   needs. */}
-                  Your monthly, transient, and event parking runs smoothly through proactive planning that anticipates your needs
+                  Your monthly, transient, and event parking runs smoothly
+                  through proactive planning that anticipates your needs
                 </li>
                 <li>
                   {/* We lead with awareness and responsibility, staying informed
                   about weather conditions, neighborhood dynamics, and city
                   policies to ensure our operations support both our customers
                   and the communities around us. */}
-                  You can rely on parking operations that account for weather, neighborhood dynamics, and city regulations.
+                  You can rely on parking operations that account for weather,
+                  neighborhood dynamics, and city regulations.
                 </li>
                 <li>
                   {/* We are committed to investing locally, building strong
                   partnerships with trusted vendors and tradespeople to deliver
                   reliable facility support while contributing to the local
                   economy. */}
-                  Get a reliable facility support through strong local partnerships that also contribute to the local economy.
+                  Get a reliable facility support through strong local
+                  partnerships that also contribute to the local economy.
                 </li>
               </ul>
             </Accordion.Body>
@@ -81,7 +83,7 @@ const services = () => {
               <Image
                 className={styles.icon}
                 alt="icon image of commercial building"
-                src={residential}
+                src={commercial}
               />
               &nbsp;
               <b>Properties</b>
@@ -92,19 +94,23 @@ const services = () => {
                   {/* Our facility management and maintenance teams work
                   synergistically to maintain all properties at optimal
                   condition. */}
-                  Your properties are kept in optimal condition through coordinated facility management and maintenance teams.
+                  Your properties are kept in optimal condition through
+                  coordinated facility management and maintenance teams.
                 </li>
                 <li>
                   {/* We provide reserved planning and consulting services for major
                   capital projects to keep our client informed of facility
                   needs. */}
-                  Receive tailored planning and consulting services for major capital projects, so you remain informed about current and future facility needs.
+                  Receive tailored reserve planning and consulting services for
+                  major capital projects, so you remain informed about current
+                  and future facility needs.
                 </li>
                 <li>
                   {/* We utilize trusted small local contractors and vendors that
                   consistently deliver excellent services to the properties we
                   manage. */}
-                  Your properties are cared for by dependable local contractors and vendors who consistently meet our high service standards.
+                  Your properties are cared for by dependable local contractors
+                  and vendors who consistently meet our high service standards.
                 </li>
               </ul>
             </Accordion.Body>
@@ -125,7 +131,9 @@ const services = () => {
                   {/* Our partnerships and continuous communication with
                   entertainment groups and local venues ensures smooth event
                   operations. */}
-                  Benefit from a seamless event operations thanks to established partnerships and continuous coordination with entertainment groups and local venues.
+                  Benefit from a seamless event operations thanks to established
+                  partnerships and continuous coordination with entertainment
+                  groups and local venues.
                 </li>
                 <li>
                   The coordinated efforts between parking, security and

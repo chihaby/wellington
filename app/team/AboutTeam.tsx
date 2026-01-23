@@ -29,28 +29,28 @@ export const metadata: Metadata = {
 const teamMembers = [
   {
     name: "Tad Lacey",
-    role: "CMA Asset Managers, Inc.r",
+    role: "CMA Asset Managers, Inc. Partner - Wellington/CMA",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: tad,
   },
   {
     name: "Ricardo da Silva",
-    role: "Wellington Property Company",
+    role: "Wellington Property Company. Partner - Wellington/CMA",
     about:
       "With over fifteen years of experience providing commercial brokerage {'&'}amp; consulting services, Mr.Ricardo da Silva has successfully represented numerous user, investor and developer clients in a variety of commercial property purchase, sale and lease transactions. Mr. da Silva is a graduate of Boston College.",
     image: ricardo,
   },
   {
-    name: "Chris Gray",
-    role: "Senior Asset Manager",
+    name: "Christopher Gray",
+    role: "Senior Asset Manager. Senior Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: chris,
   },
   {
     name: "Christine Green",
-    role: "CMA Asset Managers, Inc.",
+    role: "CMA Asset Managers, Inc. Senior Asset Manager",
     about:
       "Boss Ninja Lady A rampant generalist who oversees all aspects of the business. Always looking for opportunities for optimization and to complete her lifetime certification in Kaizen. Proactive manager who resists a reactive environment. Always wishing her team gets to do exactly what they want, while fulfilling the needs of the company. A double Major BA from SFSU, apparently Christine still speaks some Spanish and French. Christine has lived the majority of her life in the Bay Area. Along with her resistant family, she is a budding naturalist with a distinct caterpillar problem. Desperately seeking new canine companion to complete her family. Will settle for bird watching on weekends.",
     image: christine,
@@ -63,7 +63,7 @@ const teamMembers = [
     image: michelle,
   },
   {
-    name: "Raynald Jean-Gilles",
+    name: "Ray Jean-Gilles",
     role: "CMA Asset Managers, Inc. Assistant Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
@@ -77,7 +77,7 @@ const teamMembers = [
     image: holt,
   },
   {
-    name: "Aja Latham",
+    name: "Aja Lathan",
     role: "CMA Asset Managers, Inc. Office Administrator",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
@@ -85,7 +85,7 @@ const teamMembers = [
   },
   {
     name: "Kelly Tran",
-    role: "Wellington Property Company Senior Operation Manager",
+    role: "Wellington Property Company. Senior Operations Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: kelly,
@@ -109,6 +109,13 @@ export default function Team() {
             style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
+        <p>
+          <em>
+            Our team is here for you. We bring a wide range of skills to work
+            everyday as unique individuals with complementary perspectives and
+            deep integration into our communities.
+          </em>
+        </p>
         <br />
         <h2>Team Members</h2>
         <section className={styles.team_grid}>

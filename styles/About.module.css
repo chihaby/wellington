@@ -8,7 +8,7 @@
   text-transform: none;
 }
 .icon {
-  margin: 0 auto; 
+  margin: 0 auto;
   text-align: center;
 }
 .title {
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 15%;
   }
 }
 
@@ -71,7 +71,7 @@
     line-height: 1.5em;
   }
   .icon {
-    margin-top: 35%;
+    margin-top: 20%;
   }
   .subtitle {
     text-align: left;

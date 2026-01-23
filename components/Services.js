@@ -1,27 +1,27 @@
-import styles from '../styles/Services.module.css';
-import Image from 'next/image';
-import parking from '../public/assets/svg/parking_primary.svg';
-import Commercial from '../public/assets/svg/commercial_primary.svg';
-import events from '../public/assets/svg/events.svg';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Cta from './CTA2';
+import styles from "../styles/Services.module.css";
+import Image from "next/image";
+import parking from "../public/assets/svg/parking.svg";
+import commercial from "../public/assets/svg/commercial.svg";
+import events from "../public/assets/svg/events.svg";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Cta from "./CTA2";
 
 const Benefit = () => {
   return (
-    <div style={{ backgroundColor: 'var(--color-background)' }}>
+    <div style={{ backgroundColor: "var(--color-background)" }}>
       <div className={styles.container}>
         <h2 className={styles.title}>Services</h2>
         <br />
-        <Row style={{ padding: '16px' }}>
+        <Row style={{ padding: "16px" }}>
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
                 src={parking}
-                alt='parking icon image'
+                alt="parking icon image"
                 width={60}
                 style={{
-                  margin: 'auto',
+                  margin: "auto",
                 }}
               />
             </div>
@@ -47,16 +47,16 @@ const Benefit = () => {
           <Col sm={12} md={4} lg={4}>
             <div className={styles.icon}>
               <Image
-                src={Commercial}
-                alt='commercial building icon'
+                src={commercial}
+                alt="commercial building icon"
                 width={60}
                 style={{
-                  margin: 'auto',
+                  margin: "auto",
                 }}
               />
             </div>
             <div className={styles.item_title}>
-              <span>property</span>
+              <span>Property</span>
             </div>
             <div className={styles.description}>
               {/* We partner with clients to manage their commercial and residential
@@ -71,10 +71,10 @@ const Benefit = () => {
             <div className={styles.icon}>
               <Image
                 src={events}
-                alt='logo design'
+                alt="logo design"
                 width={60}
                 style={{
-                  margin: 'auto',
+                  margin: "auto",
                 }}
               />
             </div>

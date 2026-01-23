@@ -1,7 +1,6 @@
 import styles from "../styles/Hero.module.css";
 import Image from "next/image";
-// import appt from "../public/assets/img/appt.jpg";
-import group from "../public/assets/img/group.jpeg";
+import office from "../public/assets/img/office.png";
 import Cta from "./CTA";
 
 const Hero = () => {
@@ -18,18 +17,11 @@ const Hero = () => {
         </div>
         <div className={styles.image_hero}>
           <Image
-            src={group}
+            src={office}
             alt="image of Rad an experienced web developer"
-            width={650}
-            priority
-          />
-          {/* <Image
-            src={parking}
-            alt="image of Rad an experienced web developer"
-            height={320}
             width={450}
             priority
-          /> */}
+          />
         </div>
       </div>
     </div>

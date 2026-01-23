@@ -1,7 +1,7 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import styles from "../styles/About.module.css";
-import commercial_primary from "../public/assets/svg/commercial_primary.svg";
+import group from "../public/assets/img/group.jpeg";
 import Image from "next/image";
 
 const About = () => {
@@ -13,11 +13,7 @@ const About = () => {
       <Row>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.icon}>
-            <Image
-              src={commercial_primary}
-              alt="real estate icon image"
-              width={150}
-            />
+            <Image src={group} alt="real estate icon image" width={500} />
           </div>
         </Col>
         <Col sm={12} md={6} lg={6}>
