@@ -60,12 +60,11 @@
   }
   .logo {
     position: relative;
-    top: -25px;
     float: left;
   }
   .title {
-    top: -75px;
-    left: -40px;
+    top: 50px;
+    left: 0px;
     float: left;
     padding-bottom: 0rem;
   }
@@ -103,9 +102,13 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-  .navbar li {
-    flex-basis: auto;
+  .title {
+    top: 0;
   }
+  .ul_links {
+    padding-top: 60px;
+  }
+
 }
 
 @media (min-width: 1025px) {
