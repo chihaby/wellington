@@ -79,6 +79,7 @@
     font-size: 23px;
     font-weight: 600;
     float: left;
+    margin-top: -50px;
   }
   .hero_image {
     display: block;
@@ -103,8 +104,8 @@
   }
   .image_hero {
     position: absolute;
-    left: 700px;
-    top: 0px;
+    left: 600px;
+    top: -50px;
   }
 }
 
@@ -119,10 +120,11 @@
     padding-bottom: 0rem;
   }
   .image_hero {
-    left: 1040px;
-    top: 150px;
+    left: 900px;
+    top: 130px;
   }
   .strapline {
     margin-bottom: 75px;
+    margin-top: 0px;
   }
 }
