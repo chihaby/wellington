@@ -14,6 +14,7 @@ import michelle from "../../public/assets/img/michelle.png";
 import ray from "../../public/assets/img/ray.jpeg";
 import ricardo from "../../public/assets/img/ricardo.jpeg";
 import tad from "../../public/assets/img/tad.jpeg";
+import group from "../../public/assets/img/group.jpeg";
 
 export const metadata: Metadata = {
   title: "Services | Bay Area Web Design",
@@ -136,6 +137,15 @@ export default function Team() {
             </div>
           ))}
         </section>
+        <br /> <br />
+        <div className={styles.image_wrapper}>
+          <Image
+            src={group}
+            alt="Company logo"
+            width={1200}
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </div>
       </main>
       <Footer />
     </>
