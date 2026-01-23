@@ -6,8 +6,7 @@ import Accordion from "react-bootstrap/Accordion";
 import healthcare from "../../public/assets/svg/healthcare.svg";
 import corporate from "../../public/assets/svg/corporate.svg";
 import residential from "../../public/assets/svg/residential.svg";
-import airport from "../../public/assets/svg/airport.svg";
-import valet from "../../public/assets/svg/valet.svg";
+import events from "../../public/assets/svg/events.svg";
 import Image from "next/image";
 import type { Metadata } from "next";
 
@@ -109,7 +108,7 @@ const services = () => {
               <Image
                 className={styles.icon}
                 alt="icon image of commercial building"
-                src={healthcare}
+                src={events}
               />
               &nbsp;
               <b>Events</b>
@@ -133,68 +132,9 @@ const services = () => {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>
-              <Image
-                className={styles.icon}
-                alt="icon image of commercial building"
-                src={airport}
-              />
-              &nbsp;
-              <b>Airport</b>
-            </Accordion.Header>
-            <Accordion.Body>
-              <ul className={styles.list}>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                </li>
-                <li>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris.
-                </li>
-                <li>
-                  Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse.
-                </li>
-              </ul>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="4">
-            <Accordion.Header>
-              <Image
-                className={styles.icon}
-                alt="icon image of commercial building"
-                src={valet}
-              />
-              &nbsp;
-              <b>Valet</b>
-            </Accordion.Header>
-            <Accordion.Body>
-              <ul className={styles.list}>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                </li>
-                <li>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris.
-                </li>
-                <li>
-                  Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse.
-                </li>
-              </ul>
-            </Accordion.Body>
-          </Accordion.Item>
         </Accordion>
       </div>
+      <br />
       <Footer />
     </>
   );

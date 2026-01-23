@@ -28,11 +28,18 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Aja Latham",
-    role: "CMA Asset Managers, Inc. Office Administrator",
+    name: "Tad Lacey",
+    role: "CMA Asset Managers, Inc.r",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: aja,
+    image: tad,
+  },
+  {
+    name: "Ricardo da Silva",
+    role: "Wellington Property Company",
+    about:
+      "With over fifteen years of experience providing commercial brokerage {'&'}amp; consulting services, Mr.Ricardo da Silva has successfully represented numerous user, investor and developer clients in a variety of commercial property purchase, sale and lease transactions. Mr. da Silva is a graduate of Boston College.",
+    image: ricardo,
   },
   {
     name: "Chris Gray",
@@ -49,20 +56,6 @@ const teamMembers = [
     image: christine,
   },
   {
-    name: "D. Holt Lacey",
-    role: "CMA Asset Managers, Inc. Facilities and Asset Manager",
-    about:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: holt,
-  },
-  {
-    name: "Kelly Tran",
-    role: "Wellington Property Company Senior Operation Manager",
-    about:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: kelly,
-  },
-  {
     name: "Michelle Hardy",
     role: "CMA Asset Managers, Inc. Senior Administrator",
     about:
@@ -77,18 +70,25 @@ const teamMembers = [
     image: ray,
   },
   {
-    name: "Ricardo da Silva",
-    role: "Wellington Property Company",
-    about:
-      "With over fifteen years of experience providing commercial brokerage {'&'}amp; consulting services, Mr.Ricardo da Silva has successfully represented numerous user, investor and developer clients in a variety of commercial property purchase, sale and lease transactions. Mr. da Silva is a graduate of Boston College.",
-    image: ricardo,
-  },
-  {
-    name: "Tad Lacey",
-    role: "CMA Asset Managers, Inc.r",
+    name: "D. Holt Lacey",
+    role: "CMA Asset Managers, Inc. Facilities and Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
-    image: tad,
+    image: holt,
+  },
+  {
+    name: "Aja Latham",
+    role: "CMA Asset Managers, Inc. Office Administrator",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: aja,
+  },
+  {
+    name: "Kelly Tran",
+    role: "Wellington Property Company Senior Operation Manager",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: kelly,
   },
 ];
 
@@ -103,22 +103,11 @@ export default function Team() {
         </header>
         <div className={styles.image_wrapper}>
           <Image
-            src={partners}
+            src={group}
             alt="Company logo"
             width={1200}
             style={{ maxWidth: "100%", height: "auto" }}
           />
-        </div>
-        <div>
-          <p>
-            <em>
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-            </em>
-          </p>
         </div>
         <br />
         <h2>Team Members</h2>
@@ -133,18 +122,24 @@ export default function Team() {
               />
               <h3>{member.name}</h3>
               <span>{member.role}</span>
-              <span>{member.about}</span>
+              {/* <span>{member.about}</span> */}
             </div>
           ))}
         </section>
         <br /> <br />
         <div className={styles.image_wrapper}>
           <Image
-            src={group}
+            src={partners}
             alt="Company logo"
             width={1200}
             style={{ maxWidth: "100%", height: "auto" }}
           />
+        </div>
+        <br />
+        <div style={{ textAlign: "center" }}>
+          <p>
+            <em>Tad Lacey & Ricardo da Silva</em>
+          </p>
         </div>
       </main>
       <Footer />

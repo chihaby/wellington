@@ -9,9 +9,9 @@ const Hero = () => {
       <div className={styles.hero_section}>
         <div className={styles.left_side}>
           <h1 className={styles.strapline}>
-            Your East Bay asset management company. Providing parking management
-            services, special events parking, and property management services.
-            Proudly serving our community since 2014.
+            Your greater Bay Area asset management company. Providing parking
+            management services, special events parking, and property management
+            services. Proudly serving our community since 2014.
           </h1>
           <Cta />
         </div>

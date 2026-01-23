@@ -1,7 +1,7 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import styles from "../styles/About.module.css";
-import home_secondary from "../public/assets/svg/home_secondary.svg";
+import commercial_primary from "../public/assets/svg/commercial_primary.svg";
 import Image from "next/image";
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
         <Col sm={12} md={6} lg={6}>
           <div className={styles.icon}>
             <Image
-              src={home_secondary}
+              src={commercial_primary}
               alt="real estate icon image"
               width={150}
             />
@@ -23,13 +23,13 @@ const About = () => {
         <Col sm={12} md={6} lg={6}>
           <h2 className={styles.title}>Wellington/CMA</h2>
           <p className={styles.description}>
-            A trusted asset management company in the East Bay since 2014.
-            Combining the forces of two long term East Bay companies, serving
-            the community for decades. We focus on managing properties and
-            operations oversight for the most consistent, economical, and
+            A trusted asset management company in the greater Bay Area since
+            2014. Combining the forces of two long term Bay Area companies,
+            serving the community for decades. We focus on managing properties
+            and operations oversight for the most consistent, economical, and
             profitable outcome for our clients. Pursuing trusted methods as well
             as employing new technology to maximize client investment and peace
-            of mind.
+            of mind
           </p>
           <br />
         </Col>
