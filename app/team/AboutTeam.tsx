@@ -43,7 +43,7 @@ const teamMembers = [
   },
   {
     name: "Christopher Gray",
-    role: "Senior Asset Manager. Senior Asset Manager",
+    role: "Wellington Property Company. Senior Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: chris,
