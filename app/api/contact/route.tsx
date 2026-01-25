@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
     // Send email via Mailgun
     const data = {
       from: `${name} <noreply@${process.env.MAILGUN_DOMAIN}>`,
-      to: "chihaby@gmail.com",
+      to: "chihaby@gmail.com, rad@bayareawebdesign.net",
       subject: "Contact Form Wellington CMA",
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       "h:Reply-To": email,
