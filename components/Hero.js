@@ -1,7 +1,7 @@
-import styles from "../styles/Hero.module.css";
-import Image from "next/image";
-import office from "../public/assets/img/office.png";
-import Cta from "./CTA";
+import styles from '../styles/Hero.module.css';
+import Image from 'next/image';
+import office from '../public/assets/img/office.png';
+import Cta from './CTA';
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
         <div className={styles.image_hero}>
           <Image
             src={office}
-            alt="image of Rad an experienced web developer"
+            alt='Image of Downtown Oakland Garage'
             width={450}
             priority
           />

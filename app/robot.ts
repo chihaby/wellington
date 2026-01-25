@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Diffbot", allow: "/" },       // Diffbot
       { userAgent: "You.com", allow: "/" },       // You.com AI
     ],
-    sitemap: "https://bayareawebdesign.net/sitemap.xml",
+    sitemap: "https://wellingtoncma.com/sitemap.xml",
   };
 }

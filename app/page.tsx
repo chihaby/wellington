@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bay Area Web Design</title>
+        <title>Wellington CMA</title>
         <meta
           name="description"
-          content="Web design and development agency located in San Francisco bay area. Focuses on building modern websites with inclusive designs, great user experience, accessibility, API integrations and provide marketing and seo services"
+          content="Your greater Bay Area asset management company. Providing parking management services, special events parking, and property management services. Proudly serving our community since 2014."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

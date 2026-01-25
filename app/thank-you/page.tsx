@@ -54,7 +54,7 @@ export default function ThankYou() {
             <div className={styles.contactInfo}>
               <h3>Contact</h3>
               <div className={styles.contactDetails}>
-                <p>📧 Email: rad@bayareawebdesign.net</p>
+                <p>📧 Email: rad@wellingtoncma.com</p>
                 <p>📞 Phone: (510) 630-9741</p>
               </div>
             </div>

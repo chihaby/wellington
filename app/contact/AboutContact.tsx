@@ -4,9 +4,9 @@ import Footer from "../../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Bay Area Web Design",
-  description: "Contact Bay Area Web Design for free consultation",
-  metadataBase: new URL("https://bayareawebdesign.net"),
+  title: "Contact | Wellington CMA",
+  description: "Contact Wellington CMA",
+  metadataBase: new URL("https://wellingtoncma.com"),
   alternates: {
     canonical: "/contact",
   },

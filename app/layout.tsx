@@ -15,47 +15,24 @@ import Script from "next/script";
 // });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bayareawebdesign.net"),
+  metadataBase: new URL("https://wellingtoncma.com"),
   title: {
     default:
       "Trusted property management company with 15 years of service in the Bay Area. We focus on simplifying the rental experience for owners and tenants alike, ensuring every property is well-maintained, efficiently managed, and consistently profitable. From tenant screening to rent collection, our dedicated team handles every detail so you can enjoy peace of mind and maximize your investment.",
-    template: "%s | Bay Area Web Design",
+    template: "%s | Wellington CMA",
   },
   description:
-    "Professional web design and development services in the Bay Area. Custom websites, NextJS development, Wordpress development, and digital solutions for businesses, entrepreneurs and industry professionals.",
-  keywords: ["web design", "web development", "Bay Area"],
-  authors: [{ name: "Bay Area Web Design" }],
-  creator: "Bay Area Web Design",
-  publisher: "Bay Area Web Design",
+  "Your greater Bay Area asset management company. Providing parking management services, special events parking, and property management services. Proudly serving our community since 2014.", 
+  keywords: ["asset management company", "Oakland parking management company", "East Bay commercial parking management"],
+  authors: [{ name: "Wellington CMA" }],
+  creator: "Wellington CMA",
+  publisher: "Wellington CMA",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://bayareawebdesign.net",
-    siteName: "Bay Area Web Design",
-    title: "Bay Area Web Design - Professional Web Design Services",
-    description:
-      "Professional web design and development services in the Bay Area. We focus on Inclusive design with a simple, clear layout that ensures all visitors—including those with disabilities—can easily access and interact with your content. We are experts in API integrations and engaging copy",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Bay Area Web Design",
-      },
-    ],
-  },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Bay Area Web Design - Professional Web Development Services',
-  //   description: 'Professional web design and development services in the Bay Area.',
-  //   images: ['/twitter-image.jpg'],
-  //   creator: '@bayareawebdesign'
-  // },
+
   robots: {
     index: true,
     follow: true,
@@ -73,24 +50,24 @@ export const metadata: Metadata = {
   //   yahoo: "your-yahoo-verification",
   // },
   alternates: {
-    canonical: "https://bayareawebdesign.net", // 👈 canonical URL
+    canonical: "https://wellingtoncma.com", // 👈 canonical URL
   },
 };
 
 function LocalBusinessSchema() {
   const structuredData = {
-    "@context": "https://bayareawebdesign.net",
+    "@context": "https://wellingtoncma.com",
     "@type": "LocalBusiness",
-    "@id": "https://bayareawebdesign.net/#organization",
-    name: "Bay Area Web Design",
-    url: "https://bayareawebdesign.net",
-    logo: "https://bayareawebdesign.net/logo.png",
-    image: "https://bayareawebdesign.net/og-image.jpg",
+    "@id": "https://wellingtoncma.com/#organization",
+    name: "Wellington CMA",
+    url: "https://wellingtoncma.com",
+    logo: "https://wellingtoncma.com/logo.png",
+    image: "https://wellingtoncma.com/og-image.jpg",
     description:
-      "Professional web design and development services in the Bay Area",
+      "East Bay commercial parking management",
     priceRange: "$$",
-    telephone: "(510) 630-9741",
-    email: "rad@bayareawebdesign.net",
+    telephone: "(510) 874-7808",
+    email: "info@wellingtoncma.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bay Area",
@@ -103,16 +80,11 @@ function LocalBusinessSchema() {
       longitude: "-122.4194",
     },
     openingHours: "Mo-Fr 09:00-17:00",
-    // sameAs: [
-    //   "https://facebook.com/bayareawebdesign",
-    //   "https://linkedin.com/company/bayareawebdesign",
-    //   "https://twitter.com/bayareawebdesign",
-    // ],
     areaServed: {
       "@type": "State",
       name: "California",
     },
-    serviceType: ["Web Design"],
+    serviceType: ["Asset Management"],
   };
 
   return (

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Team from "./AboutTeam";
 
 export const metadata: Metadata = {
-  title: "View our services - Bay Area Web Design",
+  title: "View our services - Wellington CMA Services",
   alternates: {
-    canonical: "https://bayareawebdesign.net/services",
+    canonical: "https://wellingtoncma.com/services",
   },
 };
 

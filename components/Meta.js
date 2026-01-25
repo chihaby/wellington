@@ -1,18 +1,18 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const Meta = ({ title, keywords, description }) => {
   return (
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="keywords" content={keywords} />
-      <meta name="description" content={description} />
-      <meta charSet="utf-8" />
-      <link rel="icon" href="/favicon.ico" />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='keywords' content={keywords} />
+      <meta name='description' content={description} />
+      <meta charSet='utf-8' />
+      <link rel='icon' href='/favicon.ico' />
       <link
-        rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossOrigin="anonymous"
+        rel='stylesheet'
+        href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css'
+        integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p'
+        crossOrigin='anonymous'
       />
       <title>{title}</title>
     </Head>
@@ -20,34 +20,12 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Bay Area Web Design",
+  title: 'Wellington CMA',
   keywords: [
-    "Bay Area web design",
-    "web design bay area",
-    "bay area web design company",
-    "web design Oakland ca",
-    "bay area website design",
-    "bay area web designer",
-    "bay area web development",
-    "bay area web designers",
-    "bay area website designer",
-    "san leandro web design",
-    "bay area wordpress web design",
-    "bay area web design firm",
-    "sf bay area web design",
-    "accessibility",
-    "accessible websites",
-    "inclusive website designer",
-    "inclusive web design",
-    "inclusive web design bay area",
-    "custom WordPress",
-    "UI UX design",
-    "SEO",
-    "API integrations",
-    "payment processing",
+    'San Francisco parking management company, San Francisco event parking management, San Francisco property parking management, San Francisco parking facility management, Oakland parking management company, Oakland event parking management, Oakland property parking management, Berkeley parking management services, Berkeley event parking services, Berkeley property parking management, East Bay parking management company, East Bay event parking management, East Bay property parking services, East Bay commercial parking management, parking asset management San Francisco, parking asset management Oakland, venue parking management San Francisco, venue parking management Oakland, parking operations management East Bay, parking technology solutions Bay Area',
   ],
   description:
-    "Bay Area Web Design is a web design agency located in the Bay Area of San Francisco, California. We build custom websites from scratch with a focus on performance, design, and user experience UI/UX. We helped hundreds of clients all over the world reach their goal of having the best quality website for their business.",
+    'A trusted asset management company in the greater Bay Area since 2014. Combining the forces of two long term Bay Area companies, serving the community for decades. We focus on managing properties and operations oversight for the most consistent, economical, and profitable outcome for our clients. Pursuing trusted methods as well as employing new technology to maximize client investment and peace of mind',
 };
 
 export default Meta;

@@ -17,9 +17,9 @@ import tad from "../../public/assets/img/tad.jpeg";
 import group from "../../public/assets/img/group.jpeg";
 
 export const metadata: Metadata = {
-  title: "Services | Bay Area Web Design",
+  title: "Services | Wellington CMA",
   description:
-    "View bay area web design services for small, medium businesses and industry professionals",
+    "View Wellington CMA Team members",
   metadataBase: new URL("https://wellingtoncma.com"),
   alternates: {
     canonical: "/services",

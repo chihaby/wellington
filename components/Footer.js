@@ -3,8 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import ReCAPTCHA from 'react-google-recaptcha';
 import styles from '../styles/Footer.module.css';
-// import Link from "next/link";
-// import Row from "react-bootstrap/Row";
 import Col from 'react-bootstrap/Col';
 
 const Footer = () => {

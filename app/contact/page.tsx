@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Contact from "./AboutContact";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Bay Area Web Design",
+  title: "Contact Us - ",
   alternates: {
-    canonical: "https://bayareawebdesign.net/contact",
+    canonical: "https://wellingtoncma.com/contact",
   },
 };
 

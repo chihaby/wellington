@@ -12,8 +12,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services | Wellington CMA",
   description:
-    "View bay area web design services for small, medium businesses and industry professionals",
-  metadataBase: new URL("https://bayareawebdesign.net"),
+    "View Wellingto CMA services",
+  metadataBase: new URL("https://wellingtoncma.com"),
   alternates: {
     canonical: "/services",
   },
