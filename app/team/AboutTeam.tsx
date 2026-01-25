@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const teamMembers = [
   {
     name: "Tad Lacey",
-    role: "CMA Asset Managers, Inc Partner - Wellington/CMA",
+    role: "CMA Asset Managers, Inc. Partner - Wellington/CMA",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: tad,
@@ -50,35 +50,35 @@ const teamMembers = [
   },
   {
     name: "Christine Green",
-    role: "CMA Asset Managers, Inc Senior Asset Manager",
+    role: "CMA Asset Managers, Inc. Senior Asset Manager",
     about:
       "Boss Ninja Lady A rampant generalist who oversees all aspects of the business. Always looking for opportunities for optimization and to complete her lifetime certification in Kaizen. Proactive manager who resists a reactive environment. Always wishing her team gets to do exactly what they want, while fulfilling the needs of the company. A double Major BA from SFSU, apparently Christine still speaks some Spanish and French. Christine has lived the majority of her life in the Bay Area. Along with her resistant family, she is a budding naturalist with a distinct caterpillar problem. Desperately seeking new canine companion to complete her family. Will settle for bird watching on weekends.",
     image: christine,
   },
   {
     name: "Michelle Hardy",
-    role: "CMA Asset Managers, Inc Senior Administrator",
+    role: "CMA Asset Managers, Inc. Senior Administrator",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: michelle,
   },
   {
     name: "Ray Jean-Gilles",
-    role: "CMA Asset Managers, Inc Assistant Asset Manager",
+    role: "CMA Asset Managers, Inc. Assistant Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: ray,
   },
   {
     name: "D. Holt Lacey",
-    role: "CMA Asset Managers, Inc Facilities and Asset Manager",
+    role: "CMA Asset Managers, Inc. Facilities and Asset Manager",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: holt,
   },
   {
     name: "Aja Lathan",
-    role: "CMA Asset Managers, Inc Office Administrator",
+    role: "CMA Asset Managers, Inc. Office Administrator",
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: aja,
