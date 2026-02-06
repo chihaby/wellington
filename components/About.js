@@ -13,7 +13,7 @@ const About = () => {
       <Row>
         <Col sm={12} md={6} lg={6}>
           <div className={styles.icon}>
-            <Image src={group} alt="real estate icon image" width={500} />
+            <Image src={group} alt="image of Wellington staff" width={400} />
           </div>
         </Col>
         <Col sm={12} md={6} lg={6}>

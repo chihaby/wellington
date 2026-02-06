@@ -22,8 +22,12 @@ export const metadata: Metadata = {
     template: "%s | Wellington CMA",
   },
   description:
-  "Your greater Bay Area asset management company. Providing parking management services, special events parking, and property management services. Proudly serving our community since 2014.", 
-  keywords: ["asset management company", "Oakland parking management company", "East Bay commercial parking management"],
+    "Your greater Bay Area asset management company. Providing parking management services, special events parking, and property management services. Proudly serving our community since 2014.",
+  keywords: [
+    "asset management company",
+    "Oakland parking management company",
+    "East Bay commercial parking management",
+  ],
   authors: [{ name: "Wellington CMA" }],
   creator: "Wellington CMA",
   publisher: "Wellington CMA",
@@ -63,14 +67,13 @@ function LocalBusinessSchema() {
     url: "https://wellingtoncma.com",
     logo: "https://wellingtoncma.com/logo.png",
     image: "https://wellingtoncma.com/og-image.jpg",
-    description:
-      "East Bay commercial parking management",
+    description: "East Bay commercial parking management",
     priceRange: "$$",
     telephone: "(510) 874-7808",
     email: "info@wellingtoncma.com",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Bay Area",
+      addressLocality: "1250 Martin Luther King Junior Way. Oakland, CA 94612",
       addressRegion: "CA",
       addressCountry: "US",
     },
