@@ -254,7 +254,7 @@ const Footer = () => {
             </form>
           </div>
           <div className={styles.copyright}>
-            <p> Copyright &copy; 2025 WELLINGTON/CMA</p>
+            <p> Copyright &copy; {new Date().getFullYear()} WELLINGTON/CMA</p>
             <p>
               Designed by{" "}
               <a
