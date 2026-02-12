@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Meta from "./Meta";
 import Hero from "./Hero";
 import Services from "./Services";
-// import Clients from "./Clients";
+import Clients from "./Clients";
 import About from "./About";
 import Footer from "./Footer";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
@@ -19,7 +19,7 @@ const Layout = () => {
       <Hero />
       <About />
       <Services />
-      {/* <Clients /> */}
+      <Clients />
       <Footer />
     </ThemeProvider>
   );
