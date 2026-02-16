@@ -1,6 +1,6 @@
 "use client";
 import type { Metadata } from "next";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer.js";
@@ -14,6 +14,7 @@ import kelly from "../../public/assets/img/kelly.jpeg";
 import michelle from "../../public/assets/img/michelle.png";
 import ray from "../../public/assets/img/ray.jpeg";
 import ricardo from "../../public/assets/img/ricardo.jpeg";
+import larry from "../../public/assets/img/larry.png";
 import tad from "../../public/assets/img/tad.jpeg";
 import group from "../../public/assets/img/group.jpeg";
 
@@ -66,6 +67,14 @@ const teamMembers = [
     about:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
     image: michelle,
+  },
+  {
+    name: "Larry Isrow",
+    company: "CMA Asset Managers, Inc.",
+    role: "Senior Operations Manager",
+    about:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    image: larry,
   },
   {
     name: "Ray Jean-Gilles",
